@@ -24,9 +24,9 @@ definition(
     parent: parent ? "MichaelStruck.Google Home Helper" : null,
     description: "Allows for various SmartThings devices to be tied to switches controlled by Google Home.",
     category: "My Apps",
-    iconUrl: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/google-home-helper.src/GoogleHome.png",
-    iconX2Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/google-home-helper.src/GoogleHome@2x.png",
-    iconX3Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/google-home-helper.src/GoogleHome@2x.png")
+    iconUrl: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/google-home-helper.src/GoogleHome.png",
+    iconX2Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/google-home-helper.src/GoogleHome@2x.png",
+    iconX3Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/google-home-helper.src/GoogleHome@2x.png")
 preferences {
     page name:"pageMain"
     //Parent menu pages
@@ -70,7 +70,7 @@ def mainPageParent() {
 def pageAbout(){
 	dynamicPage(name: "pageAbout", uninstall: true) {
 		section {
-        	paragraph "${textAppName()}\n${textCopyright()}", image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/google-home-helper.src/GoogleHome@2x.png"
+        	paragraph "${textAppName()}\n${textCopyright()}", image: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/google-home-helper.src/GoogleHome@2x.png"
         }
         section ("SmartApp/Switch Versions") { paragraph "${textVersion()}" }
         section ("Apache License") { paragraph "${textLicense()}"}
@@ -1145,7 +1145,7 @@ def toggleState(swDevices){
 //Get Sonos Alarm Sound uri
 def getAlarmSound(){
     def soundLength = alarmSonosTimer && alarmSonosTimer < 60 ? alarmSonosTimer : 60
-    def soundUri = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/alexa-helper-scenario.src/AlarmSirens/AlarmSiren${alarmSonosSound}.mp3", duration: "${soundLength}"]
+    def soundUri = [uri: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/alexa-helper-scenario.src/AlarmSirens/AlarmSiren${alarmSonosSound}.mp3", duration: "${soundLength}"]
     if (alarmSonosSound == "5") soundUri =[uri: "${alarmSonosCustom}", duration: "${soundLength}"]
     state.alarmSound = soundUri
 }

@@ -29,9 +29,9 @@ definition(
     parent: parent ? "MichaelStruck.Ask Alexa" : null,
     description: "Provide interfacing to control and report on SmartThings devices with the Amazon Echo ('Alexa').",
     category: "My Apps",
-    iconUrl: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/ask-alexa.src/AskAlexa.png",
-    iconX2Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/ask-alexa.src/AskAlexa@2x.png",
-    iconX3Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/ask-alexa.src/AskAlexa@2x.png",
+    iconUrl: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/ask-alexa.src/AskAlexa.png",
+    iconX2Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/ask-alexa.src/AskAlexa@2x.png",
+    iconX3Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/ask-alexa.src/AskAlexa@2x.png",
   	oauth: true)
 preferences {
     page name:"pageMain"
@@ -538,7 +538,7 @@ def pageRooms() {
 }
 def pageAbout(){
 	dynamicPage(name: "pageAbout", uninstall: true) {
-        section { paragraph "${textAppName()}\n${textCopyright()}", image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/ask-alexa.src/AskAlexa@2x.png" }
+        section { paragraph "${textAppName()}\n${textCopyright()}", image: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/ask-alexa.src/AskAlexa@2x.png" }
         section ("Version numbers") { paragraph "${textVersion()}" } 
         section (title: "Access token / Application ID", hideable: true, hidden: true){
             if (!state.accessToken) OAuthToken()
@@ -3785,9 +3785,9 @@ def setupData(){
         </tr></table>"""
     }*/
     result += "<br><hr><br><i><b>URL of this setup page:</b></i><br><br>${getApiServerUrl()}/api/smartapps/installations/${app.id}/setup?access_token=${state.accessToken}<br><br><hr>"
-	result += "<br><i><b>Lastest version of the Lambda code:</b></i><br><br><a href='https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/ask-alexa.src/Node.js'>https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/ask-alexa.src/Node.js</a><br><br><hr>"
-    result += "<br><i><b>Lastest version of the Sample Utterances:</b></i><br><br><a href='https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/ask-alexa.src/Sample%20Utterances'>https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/ask-alexa.src/Sample%20Utterances</a><br><br><hr>"
-    result += "<br><i><b>Lastest version of the Intent Schema:</b></i><br><br><a href='https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/ask-alexa.src/Intent%20Schema'>https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/ask-alexa.src/Intent%20Schema</a><br><br><hr></div>"
+	result += "<br><i><b>Lastest version of the Lambda code:</b></i><br><br><a href='https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/ask-alexa.src/Node.js'>https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/ask-alexa.src/Node.js</a><br><br><hr>"
+    result += "<br><i><b>Lastest version of the Sample Utterances:</b></i><br><br><a href='https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/ask-alexa.src/Sample%20Utterances'>https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/ask-alexa.src/Sample%20Utterances</a><br><br><hr>"
+    result += "<br><i><b>Lastest version of the Intent Schema:</b></i><br><br><a href='https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/ask-alexa.src/Intent%20Schema'>https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/ask-alexa.src/Intent%20Schema</a><br><br><hr></div>"
     def warning = dupCounter ? "<br><font color='red'>* There were errors in your Ask Alexa setup. See the red items below to resolve</font><br>" : ""
     if (!invocationName) warning="<br><font color='red'>* You are missing the invocation name within your Ask Alexa SmartApp. The code above will use 'smart things' as default.</font><br>"
     result = result.replaceAll("--DevCodeWarn--", warning)

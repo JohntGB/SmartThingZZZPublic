@@ -35,9 +35,9 @@ definition(
     author: "Michael Struck",
     description: "Allows for URL cloud interfacing to control SmartThings devices.",
     category: "Convenience",
-    iconUrl: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/cloud-interface.src/CloudInterface.png",
-    iconX2Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/cloud-interface.src/CloudInterface@2x.png",
-    iconX3Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/cloud-interface.src/CloudInterface@2x.png",
+    iconUrl: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/cloud-interface.src/CloudInterface.png",
+    iconX2Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/cloud-interface.src/CloudInterface@2x.png",
+    iconX3Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/cloud-interface.src/CloudInterface@2x.png",
   	oauth: true)
 preferences {
     page name:"mainPage"
@@ -76,7 +76,7 @@ def mainPage() {
 def pageAbout(){
 	dynamicPage(name: "pageAbout", uninstall: true ) {
         section {
-        	paragraph "${textAppName()} - ${textVersion()}\n${textCopyright()}",image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/cloud-interface.src/CloudInterface@2x.png"
+        	paragraph "${textAppName()} - ${textVersion()}\n${textCopyright()}",image: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/cloud-interface.src/CloudInterface@2x.png"
         }
         section ("Access Token"){
             if (!state.accessToken) {

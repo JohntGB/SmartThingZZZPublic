@@ -52,9 +52,9 @@ definition(
     author: "Michael Struck",
     description: "Allows for various SmartThings devices to be tied to switches controlled by Amazon Echo('Alexa').",
     category: "My Apps",
-    iconUrl: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/alexa-helper.src/Alexa.png",
-    iconX2Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/alexa-helper.src/Alexa@2x.png",
-    iconX3Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/alexa-helper.src/Alexa@2x.png")
+    iconUrl: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/alexa-helper.src/Alexa.png",
+    iconX2Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/alexa-helper.src/Alexa@2x.png",
+    iconX3Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/alexa-helper.src/Alexa@2x.png")
 preferences {
     page name:"mainPage"
     page name:"pageAbout"
@@ -92,7 +92,7 @@ def mainPage() {
 def pageAbout(){
 	dynamicPage(name: "pageAbout", uninstall: true) {
 		section {
-        	paragraph "${textAppName()}\n${textCopyright()}", image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/alexa-helper.src/Alexa@2x.png"
+        	paragraph "${textAppName()}\n${textCopyright()}", image: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/alexa-helper.src/Alexa@2x.png"
         }
         section ("SmartApp/Switch Versions") {
     		paragraph "${textVersion()}"

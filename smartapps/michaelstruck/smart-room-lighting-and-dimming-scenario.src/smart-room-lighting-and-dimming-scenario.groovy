@@ -29,9 +29,9 @@ definition(
     description: "Child app (do not publish) that allows for control of light/dimmers based on motion and lux levels.",
     category: "Convenience",
     parent: "MichaelStruck:Smart Room Lighting and Dimming",
-    iconUrl: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/smart-room-lighting-and-dimming-scenario.src/SmartLight.png",
-    iconX2Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/smart-room-lighting-and-dimming-scenario.src/SmartLight@2x.png",
-	iconX3Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/smart-room-lighting-and-dimming-scenario.src/SmartLight@2x.png"
+    iconUrl: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/smart-room-lighting-and-dimming-scenario.src/SmartLight.png",
+    iconX2Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/smart-room-lighting-and-dimming-scenario.src/SmartLight@2x.png",
+	iconX3Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/smart-room-lighting-and-dimming-scenario.src/SmartLight@2x.png"
     )
 
 preferences {

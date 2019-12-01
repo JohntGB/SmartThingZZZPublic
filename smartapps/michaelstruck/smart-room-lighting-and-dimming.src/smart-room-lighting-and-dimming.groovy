@@ -34,9 +34,9 @@ definition(
     author: "Michael Struck",
     description: "Control multiple scenarios of light/dimmers based on motion and lux levels.",
     category: "My Apps",
-    iconUrl: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/smart-room-lighting-and-dimming.src/SmartLight.png",
-    iconX2Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/smart-room-lighting-and-dimming.src/SmartLight@2x.png",
-	iconX3Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/smart-room-lighting-and-dimming.src/SmartLight@2x.png"
+    iconUrl: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/smart-room-lighting-and-dimming.src/SmartLight.png",
+    iconX2Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/smart-room-lighting-and-dimming.src/SmartLight@2x.png",
+	iconX3Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/smart-room-lighting-and-dimming.src/SmartLight@2x.png"
     )
     
 preferences {
@@ -59,7 +59,7 @@ def mainPage() {
 def pageAbout() {
     dynamicPage(name: "pageAbout", uninstall: true) {
         section {
-        	paragraph "${textAppName()}\n${textCopyright()}", image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/smart-room-lighting-and-dimming.src/SmartLight@2x.png"
+        	paragraph "${textAppName()}\n${textCopyright()}", image: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/smart-room-lighting-and-dimming.src/SmartLight@2x.png"
         }
         section ("SmartApp Versions") {
             paragraph "${textVersion()}"

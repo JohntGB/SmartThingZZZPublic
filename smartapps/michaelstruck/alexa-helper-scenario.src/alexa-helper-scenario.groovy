@@ -24,9 +24,9 @@ definition(
 	description: "Child app (do not publish) that allows various SmartThings devices to be tied to switches controlled by Amazon Echo('Alexa').",
 	category: "Convenience",
 	parent: "MichaelStruck:Alexa Helper",
-	iconUrl: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/alexa-helper-scenario.src/Alexa.png",
-	iconX2Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/alexa-helper-scenario.src/Alexa%402x.png",
-	iconX3Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/alexa-helper-scenario.src/Alexa%402x.png")    
+	iconUrl: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/alexa-helper-scenario.src/Alexa.png",
+	iconX2Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/alexa-helper-scenario.src/Alexa%402x.png",
+	iconX3Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/alexa-helper-scenario.src/Alexa%402x.png")    
 preferences {
 	page name: "pageStart"
 	page name: "pageControl"
@@ -1017,7 +1017,7 @@ def toggleState(swDevices){
 //Get Sonos Alarm Sound uri
 def getAlarmSound(){
     def soundLength = alarmSonosTimer && alarmSonosTimer < 60 ? alarmSonosTimer : 60   
-    def soundUri = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/alexa-helper-scenario.src/AlarmSirens/AlarmSiren${alarmSonosSound}.mp3", duration: "${soundLength}"]
+    def soundUri = [uri: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/alexa-helper-scenario.src/AlarmSirens/AlarmSiren${alarmSonosSound}.mp3", duration: "${soundLength}"]
     if (alarmSonosSound == "5") soundUri =[uri: "${alarmSonosCustom}", duration: "${soundLength}"]
     state.alarmSound = soundUri
 }
