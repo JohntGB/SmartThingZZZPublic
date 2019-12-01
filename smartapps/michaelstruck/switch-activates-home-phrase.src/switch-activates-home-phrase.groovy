@@ -21,13 +21,13 @@
  */
 definition(
     name: "Switch Activates Home Phrase",
-    namespace: "JohntGB",
+    namespace: "MichaelStruck",
     author: "Michael Struck",
     description: "Ties a Hello, Home phrase to a switch's state. Perfect for use with IFTTT.",
     category: "Convenience",
-    iconUrl: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/IFTTT-SmartApps/App1.png",
-    iconX2Url: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/IFTTT-SmartApps/App1@2x.png",
-    iconX3Url: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/IFTTT-SmartApps/App1@2x.png")
+    iconUrl: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/IFTTT-SmartApps/App1.png",
+    iconX2Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/IFTTT-SmartApps/App1@2x.png",
+    iconX3Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/IFTTT-SmartApps/App1@2x.png")
 
 
 preferences {

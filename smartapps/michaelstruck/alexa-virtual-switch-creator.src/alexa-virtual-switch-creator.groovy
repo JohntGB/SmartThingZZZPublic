@@ -20,7 +20,7 @@
 definition(
     name: "Alexa Virtual Device Creator",
     singleInstance: true,
-    namespace: "JohntGB",
+    namespace: "MichaelStruck",
     author: "Michael Struck",
     description: "Allows for creation of SmartThings virtual devices that can be tied to items controlled by Amazon Echo('Alexa').",
     category: "My Apps",
@@ -106,7 +106,7 @@ def initialize() {}
 //Common modules (for adding switches)
 def addChildSwitches(){
     def deviceID = "AVDC_${app.id}_${getChildDevices().size()}"
-    def nameSpace = "JohntGB"
+    def nameSpace = "MichaelStruck"
     def result
     try {
 		def childDevice = addChildDevice(nameSpace, addSwitchType, deviceID, null, [name: deviceID, label: addSwitchName, completedSetup: true])
@@ -130,7 +130,7 @@ def deleteChildSwitches() {
 }
 //Common modules
 def getSwitchAbout(){ return "Created by Alexa Virtual Device Creator" }
-def imgURL() { return "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/img/" }
+def imgURL() { return "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/" }
 //Version/Copyright/Information/Help
 private def textAppName() { return "Alexa Virtual Device Creator" }	
 private def textVersion() {

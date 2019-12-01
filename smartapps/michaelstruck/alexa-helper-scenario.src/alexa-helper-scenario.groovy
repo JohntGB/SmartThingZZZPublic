@@ -19,11 +19,11 @@
  */
 definition(
 	name: "Alexa Helper-Scenario",
-	namespace: "JohntGB",
+	namespace: "MichaelStruck",
 	author: "Michael Struck",
 	description: "Child app (do not publish) that allows various SmartThings devices to be tied to switches controlled by Amazon Echo('Alexa').",
 	category: "Convenience",
-	parent: "JohntGB:Alexa Helper",
+	parent: "MichaelStruck:Alexa Helper",
 	iconUrl: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/alexa-helper-scenario.src/Alexa.png",
 	iconX2Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/alexa-helper-scenario.src/Alexa%402x.png",
 	iconX3Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/alexa-helper-scenario.src/Alexa%402x.png")    
@@ -54,10 +54,10 @@ def pageStart() {
 		if (scenarioType && parent.getRestrictions()){
 			section("Restrictions") {            
 				input "runDay", "enum", options: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], title: "Only Certain Days Of The Week...",  multiple: true, required: false,
-                	image: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/img/calendar.png"
+                	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/calendar.png"
         		href "timeIntervalInput", title: "Only During Certain Times...", description: getTimeLabel(timeStart, timeEnd), state: greyOutState(timeStart, timeEnd,""),
-                	image: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/img/clock.png"
-            	input "runMode", "mode", title: "Only In The Following Modes...", multiple: true, required: false, image: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/img/modes.png"
+                	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/clock.png"
+            	input "runMode", "mode", title: "Only In The Following Modes...", multiple: true, required: false, image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/modes.png"
 			}
         }
         section("Tap below to remove this scenario"){}

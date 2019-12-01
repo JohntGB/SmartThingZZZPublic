@@ -19,7 +19,7 @@
  *
  */
 metadata {
-	definition (name: "Momentary Button Tile-Google", namespace: "JohntGB", author: "SmartThings") {
+	definition (name: "Momentary Button Tile-Google", namespace: "MichaelStruck", author: "SmartThings") {
 		capability "Actuator"
 		capability "Switch"
 		capability "Momentary"
@@ -35,8 +35,8 @@ metadata {
 	tiles(scale: 2) {
 		multiAttributeTile(name: "switch", type: "generic", width: 6, height: 4, canChangeIcon: true, canChangeBackground: true) {
 			tileAttribute("device.switch", key: "PRIMARY_CONTROL") {
-				attributeState "off", label: 'push', action: "momentary.push", backgroundColor: "#ffffff",icon: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/devicetypes/michaelstruck/google-switch.src/GHH-Off.png", nextState: "on"
-				attributeState "on", label: 'push', action: "momentary.push", backgroundColor: "#79b821",icon: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/devicetypes/michaelstruck/google-switch.src/GHH-On.png"
+				attributeState "off", label: 'push', action: "momentary.push", backgroundColor: "#ffffff",icon: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/devicetypes/michaelstruck/google-switch.src/GHH-Off.png", nextState: "on"
+				attributeState "on", label: 'push', action: "momentary.push", backgroundColor: "#79b821",icon: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/devicetypes/michaelstruck/google-switch.src/GHH-On.png"
 			}
         }
         valueTile("aboutTxt", "device.about", inactiveLabel: false, decoration: "flat", width: 6, height:2) {

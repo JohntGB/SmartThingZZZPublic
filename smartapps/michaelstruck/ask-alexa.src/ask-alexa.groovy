@@ -21,7 +21,7 @@
  */
 definition(
     name: "Ask Alexa${parent ? " - Macro " : ""}",
-    namespace: "JohntGB",
+    namespace: "MichaelStruck",
     //Change line below to 'false' to allow for multi app install (Advanced...see instructions)
     	singleInstance: true,
     //-----------------------------------------------------------
@@ -201,7 +201,7 @@ def pageSchdr() {
         }
 		if (schCount) section(schCount==1 ? "One schedule configured" : schCount + " schedules configured" ){}
         section(" "){
-        	app(name: "childSCHD", appName: "Ask Alexa Schedule", namespace: "JohntGB", title: "Create A New Schedule...", description: "Tap to create a new schedule", multiple: true, image: imgURL() + "add.png")
+        	app(name: "childSCHD", appName: "Ask Alexa Schedule", namespace: "MichaelStruck", title: "Create A New Schedule...", description: "Tap to create a new schedule", multiple: true, image: imgURL() + "add.png")
         }
 	}
 }
@@ -486,7 +486,7 @@ def pageVoiceRPT() {
         }
         if (vrCount) section(vrCount==1 ? "One voice report configured" : vrCount + " voice reports configured" ){} 
         section(" "){
-        	app(name: "childVR", appName: "Ask Alexa Voice Report", namespace: "JohntGB", title: "Create A New Voice Report...", description: "Tap to create a new report", multiple: true, image: imgURL() + "add.png")
+        	app(name: "childVR", appName: "Ask Alexa Voice Report", namespace: "MichaelStruck", title: "Create A New Voice Report...", description: "Tap to create a new report", multiple: true, image: imgURL() + "add.png")
         }
 	}
 }
@@ -503,7 +503,7 @@ def pageWeather() {
         }
         if (wrCount) section(wrCount==1 ? "One weather report configured" : wrCount + " weather reports configured" ){}    
         section(" "){
-        	app(name: "childWR", appName: "Ask Alexa Weather Report", namespace: "JohntGB", title: "Create A New Weather Report...", description: "Tap to create a new report", multiple: true, image: imgURL() + "add.png")
+        	app(name: "childWR", appName: "Ask Alexa Weather Report", namespace: "MichaelStruck", title: "Create A New Weather Report...", description: "Tap to create a new report", multiple: true, image: imgURL() + "add.png")
         }
 	}
 }
@@ -516,7 +516,7 @@ def pageMacros() {
         }
         if (macroCount) section(macroCount==1 ? "One macro configured" : macroCount + " macros configured" ){}
         section(" "){
-        	app(name: "childMacros", appName: "Ask Alexa", namespace: "JohntGB", title: "Create A New Macro...", description: "Tap to create a new macro", multiple: true, image: imgURL() + "add.png")
+        	app(name: "childMacros", appName: "Ask Alexa", namespace: "MichaelStruck", title: "Create A New Macro...", description: "Tap to create a new macro", multiple: true, image: imgURL() + "add.png")
         }
 	}
 }
@@ -532,7 +532,7 @@ def pageRooms() {
        }
        if (rmCount) section(rmCount==1 ? "One room / group configured" : rmCount + " rooms / groups configured" ){}
        section(" "){
-        	app(name: "childRooms", appName: "Ask Alexa Rooms/Groups", namespace: "JohntGB", title: "Create A New Room/Group...", description: "Tap to create a room/group", multiple: true, image: imgURL() + "add.png")
+        	app(name: "childRooms", appName: "Ask Alexa Rooms/Groups", namespace: "MichaelStruck", title: "Create A New Room/Group...", description: "Tap to create a room/group", multiple: true, image: imgURL() + "add.png")
         }
 	}
 }
@@ -809,7 +809,7 @@ def pageMsgQue() {
         	href "pagePriQueue", title: "Primary Message Queue", description: "", state:"complete"
         }
         section(" "){
-        	app(name: "childMQ", appName: "Ask Alexa Message Queue", namespace: "JohntGB", title: "Create A New Message Queue...", description: "Tap to create a new message queue", multiple: true, image: imgURL() + "add.png")
+        	app(name: "childMQ", appName: "Ask Alexa Message Queue", namespace: "MichaelStruck", title: "Create A New Message Queue...", description: "Tap to create a new message queue", multiple: true, image: imgURL() + "add.png")
         }
 	}
 }
@@ -2799,13 +2799,13 @@ def battOptions() { return  [5:"<5%",10:"<10%",20:"<20%",30:"<30%",40:"<40%",50:
 def kelvinOptions(){ return ["${parent.kSoftWhite}" : "Soft White (${parent.kSoftWhite}K)", "${parent.kWarmWhite}" : "Warm White (${parent.kWarmWhite}K)", 
     "${parent.kCoolWhite}": "Cool White (${parent.kCoolWhite}K)", "${parent.kDayWhite}" : "Daylight White (${parent.kDayWhite}K)"] 
 } 
-def imgURL() { return "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/img/" }
-def getAskAlexa(){ return findAllChildAppsByNamespaceAndName("JohntGB", "Ask Alexa") }
-def getAAMQ() { return findAllChildAppsByNamespaceAndName("JohntGB", "Ask Alexa Message Queue") }
-def getSCHD() { return findAllChildAppsByNamespaceAndName("JohntGB", "Ask Alexa Schedule") }
-def getWR() { return findAllChildAppsByNamespaceAndName("JohntGB", "Ask Alexa Weather Report") }
-def getVR() { return findAllChildAppsByNamespaceAndName("JohntGB", "Ask Alexa Voice Report") }
-def getRM() { return findAllChildAppsByNamespaceAndName("JohntGB", "Ask Alexa Rooms/Groups") }
+def imgURL() { return "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/" }
+def getAskAlexa(){ return findAllChildAppsByNamespaceAndName("MichaelStruck", "Ask Alexa") }
+def getAAMQ() { return findAllChildAppsByNamespaceAndName("MichaelStruck", "Ask Alexa Message Queue") }
+def getSCHD() { return findAllChildAppsByNamespaceAndName("MichaelStruck", "Ask Alexa Schedule") }
+def getWR() { return findAllChildAppsByNamespaceAndName("MichaelStruck", "Ask Alexa Weather Report") }
+def getVR() { return findAllChildAppsByNamespaceAndName("MichaelStruck", "Ask Alexa Voice Report") }
+def getRM() { return findAllChildAppsByNamespaceAndName("MichaelStruck", "Ask Alexa Rooms/Groups") }
 def macAliasCount() { return 3 }
 def getList(items){
 	def result = "", itemCount=items.size() as int
@@ -2858,19 +2858,19 @@ def soundFXList(){
 }
 def sfxLookup(sfx){
 	def result 
-    if (sfx=="1") result = [uri: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/media/checkyourmailbox.mp3", duration:"6"]
-	else if (sfx=="2") result = [uri: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/media/dr-evil-youve-got-freakin-mail.mp3", duration:"2"]
-    else if (sfx=="3") result = [uri: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/media/georgecarlin.mp3", duration:"3"]
-    else if (sfx=="4") result = [uri: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/media/hal2001.mp3", duration:"2"]
-    else if (sfx=="5") result = [uri: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/media/MAILWORF.mp3", duration:"4"]
-    else if (sfx=="6") result = [uri: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/media/pacman.mp3", duration:"5"]
-    else if (sfx=="7") result = [uri: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/media/R2D2-yeah.mp3", duration:"2"]
-    else if (sfx=="8") result = [uri: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/media/yoda-message-from-the-darkside.mp3", duration:"4"]
-    else if (sfx=="9") result = [uri: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/media/youve-got-mail-sound.mp3", duration:"2"]
-    else if (sfx=="10") result = [uri: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/media/Tone1.mp3", duration:"2"]
-    else if (sfx=="11") result = [uri: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/media/Tone2.mp3", duration:"4"]
-    else if (sfx=="12") result = [uri: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/media/Tone4.mp3", duration:"2"]
-    else if (sfx=="13") result = [uri: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/media/Tone4.mp3", duration:"3"]
+    if (sfx=="1") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/checkyourmailbox.mp3", duration:"6"]
+	else if (sfx=="2") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/dr-evil-youve-got-freakin-mail.mp3", duration:"2"]
+    else if (sfx=="3") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/georgecarlin.mp3", duration:"3"]
+    else if (sfx=="4") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/hal2001.mp3", duration:"2"]
+    else if (sfx=="5") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/MAILWORF.mp3", duration:"4"]
+    else if (sfx=="6") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/pacman.mp3", duration:"5"]
+    else if (sfx=="7") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/R2D2-yeah.mp3", duration:"2"]
+    else if (sfx=="8") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/yoda-message-from-the-darkside.mp3", duration:"4"]
+    else if (sfx=="9") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/youve-got-mail-sound.mp3", duration:"2"]
+    else if (sfx=="10") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/Tone1.mp3", duration:"2"]
+    else if (sfx=="11") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/Tone2.mp3", duration:"4"]
+    else if (sfx=="12") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/Tone4.mp3", duration:"2"]
+    else if (sfx=="13") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/Tone4.mp3", duration:"3"]
     else if (sfx=="custom") result = [uri:"${mqAlertCustom}",duration:"10"]
  	return result   
 }

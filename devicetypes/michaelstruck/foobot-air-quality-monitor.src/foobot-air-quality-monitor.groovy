@@ -29,7 +29,7 @@
         	360: "Every 6 hours", 720: "Every 12 hours", 1440: "Once a day"], displayDuringSetup: true
 }
 metadata {
-	definition (name: "Foobot Air Quality Monitor", namespace: "JohntGB", author: "Michael Struck") {
+	definition (name: "Foobot Air Quality Monitor", namespace: "MichaelStruck", author: "Michael Struck") {
 		capability "Polling"
         capability "Refresh"
         capability "Sensor"

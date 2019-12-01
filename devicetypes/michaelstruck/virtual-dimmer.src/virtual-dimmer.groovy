@@ -22,7 +22,7 @@
  */
 
 metadata {
-        definition (name: "Virtual Dimmer", namespace: "JohntGB", author: "SmartThings") {
+        definition (name: "Virtual Dimmer", namespace: "MichaelStruck", author: "SmartThings") {
         capability "Switch"
         capability "Refresh"
         capability "Switch Level"

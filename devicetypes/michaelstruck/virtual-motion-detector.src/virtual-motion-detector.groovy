@@ -19,7 +19,7 @@
  *
  */
 metadata {
-	definition (name: "Virtual Motion Detector", namespace: "JohntGB", author: "SmartThings") {
+	definition (name: "Virtual Motion Detector", namespace: "MichaelStruck", author: "SmartThings") {
 		capability "Motion Sensor"
 		capability "Sensor"
         

@@ -16,7 +16,7 @@
  */
 definition(
     name: "Grandfather Sonos",
-    namespace: "JohntGB",
+    namespace: "MichaelStruck",
     author: "Michael Struck",
     description: "Chimes a Sonos speaker at the top of the hour.",
     category: "Convenience",
@@ -123,7 +123,7 @@ private parseHour(){
 }
 private timeParse(time, type) { return new Date().parse("yyyy-MM-dd'T'HH:mm:ss.SSSZ", time).format("${type}", location.timeZone)}
 //-----------------------------------------------------------------------
-def imgURL() { return "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/img/" }
+def imgURL() { return "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/" }
 //Version/Copyright/Information/Help
 private def textAppName() { def text = "Grandfather Sonos"}	
 private def textVersion() { def version = "Version 1.0.0 (12/19/2016)" }
