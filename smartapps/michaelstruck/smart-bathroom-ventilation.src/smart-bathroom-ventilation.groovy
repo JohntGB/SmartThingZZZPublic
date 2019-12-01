@@ -33,9 +33,9 @@ definition(
     author: "Michael Struck",
     description: "Control multiple ventilation scenarios based on humidity or certain lights being turned on.",
     category: "Convenience",
-    iconUrl: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Smart-Bathroom-Ventilation/BathVent.png",
-    iconX2Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Smart-Bathroom-Ventilation/BathVent@2x.png",
-    iconX3Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Smart-Bathroom-Ventilation/BathVent@2x.png"
+    iconUrl: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/Smart-Bathroom-Ventilation/BathVent.png",
+    iconX2Url: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/Smart-Bathroom-Ventilation/BathVent@2x.png",
+    iconX3Url: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/Smart-Bathroom-Ventilation/BathVent@2x.png"
     )
 
 preferences {
@@ -50,7 +50,7 @@ def mainPage(){
 		}
 		section([title:"Options", mobileOnly:true]) {
 			href "pageAbout", title: "About ${textAppName()}", description: "Tap to get application version, license, instructions or to remove the application",
-            	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/img/info.png"
+            	image: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/img/info.png"
 		}
 	}
 }
@@ -58,7 +58,7 @@ def mainPage(){
 def pageAbout() {
 	dynamicPage(name: "pageAbout" , uninstall: true) {
     	section {
-        paragraph "${textAppName()}\n${textCopyright()}", image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Smart-Bathroom-Ventilation/BathVent@2x.png"
+        paragraph "${textAppName()}\n${textCopyright()}", image: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/Smart-Bathroom-Ventilation/BathVent@2x.png"
         }
         section ("SmartApp Versions") {
 			paragraph textVersion()
