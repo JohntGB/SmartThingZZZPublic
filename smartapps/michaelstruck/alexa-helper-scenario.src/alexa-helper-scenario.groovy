@@ -54,10 +54,10 @@ def pageStart() {
 		if (scenarioType && parent.getRestrictions()){
 			section("Restrictions") {            
 				input "runDay", "enum", options: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], title: "Only Certain Days Of The Week...",  multiple: true, required: false,
-                	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/calendar.png"
+                	image: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/calendar.png"
         		href "timeIntervalInput", title: "Only During Certain Times...", description: getTimeLabel(timeStart, timeEnd), state: greyOutState(timeStart, timeEnd,""),
-                	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/clock.png"
-            	input "runMode", "mode", title: "Only In The Following Modes...", multiple: true, required: false, image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/modes.png"
+                	image: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/clock.png"
+            	input "runMode", "mode", title: "Only In The Following Modes...", multiple: true, required: false, image: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/modes.png"
 			}
         }
         section("Tap below to remove this scenario"){}

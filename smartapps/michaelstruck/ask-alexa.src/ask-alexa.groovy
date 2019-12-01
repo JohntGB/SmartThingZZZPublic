@@ -2799,7 +2799,7 @@ def battOptions() { return  [5:"<5%",10:"<10%",20:"<20%",30:"<30%",40:"<40%",50:
 def kelvinOptions(){ return ["${parent.kSoftWhite}" : "Soft White (${parent.kSoftWhite}K)", "${parent.kWarmWhite}" : "Warm White (${parent.kWarmWhite}K)", 
     "${parent.kCoolWhite}": "Cool White (${parent.kCoolWhite}K)", "${parent.kDayWhite}" : "Daylight White (${parent.kDayWhite}K)"] 
 } 
-def imgURL() { return "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/" }
+def imgURL() { return "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/" }
 def getAskAlexa(){ return findAllChildAppsByNamespaceAndName("MichaelStruck", "Ask Alexa") }
 def getAAMQ() { return findAllChildAppsByNamespaceAndName("MichaelStruck", "Ask Alexa Message Queue") }
 def getSCHD() { return findAllChildAppsByNamespaceAndName("MichaelStruck", "Ask Alexa Schedule") }
@@ -2858,19 +2858,19 @@ def soundFXList(){
 }
 def sfxLookup(sfx){
 	def result 
-    if (sfx=="1") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/checkyourmailbox.mp3", duration:"6"]
-	else if (sfx=="2") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/dr-evil-youve-got-freakin-mail.mp3", duration:"2"]
-    else if (sfx=="3") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/georgecarlin.mp3", duration:"3"]
-    else if (sfx=="4") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/hal2001.mp3", duration:"2"]
-    else if (sfx=="5") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/MAILWORF.mp3", duration:"4"]
-    else if (sfx=="6") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/pacman.mp3", duration:"5"]
-    else if (sfx=="7") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/R2D2-yeah.mp3", duration:"2"]
-    else if (sfx=="8") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/yoda-message-from-the-darkside.mp3", duration:"4"]
-    else if (sfx=="9") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/youve-got-mail-sound.mp3", duration:"2"]
-    else if (sfx=="10") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/Tone1.mp3", duration:"2"]
-    else if (sfx=="11") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/Tone2.mp3", duration:"4"]
-    else if (sfx=="12") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/Tone4.mp3", duration:"2"]
-    else if (sfx=="13") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/Tone4.mp3", duration:"3"]
+    if (sfx=="1") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/checkyourmailbox.mp3", duration:"6"]
+	else if (sfx=="2") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/dr-evil-youve-got-freakin-mail.mp3", duration:"2"]
+    else if (sfx=="3") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/georgecarlin.mp3", duration:"3"]
+    else if (sfx=="4") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/hal2001.mp3", duration:"2"]
+    else if (sfx=="5") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/MAILWORF.mp3", duration:"4"]
+    else if (sfx=="6") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/pacman.mp3", duration:"5"]
+    else if (sfx=="7") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/R2D2-yeah.mp3", duration:"2"]
+    else if (sfx=="8") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/yoda-message-from-the-darkside.mp3", duration:"4"]
+    else if (sfx=="9") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/youve-got-mail-sound.mp3", duration:"2"]
+    else if (sfx=="10") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/Tone1.mp3", duration:"2"]
+    else if (sfx=="11") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/Tone2.mp3", duration:"4"]
+    else if (sfx=="12") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/Tone4.mp3", duration:"2"]
+    else if (sfx=="13") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/Tone4.mp3", duration:"3"]
     else if (sfx=="custom") result = [uri:"${mqAlertCustom}",duration:"10"]
  	return result   
 }

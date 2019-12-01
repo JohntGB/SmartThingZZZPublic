@@ -1166,7 +1166,7 @@ private parseDate(time, type){
     new Date().parse("yyyy-MM-dd'T'HH:mm:ss.SSSZ", formattedDate).format("${type}", timeZone(formattedDate))
 }
 //Common modules
-def imgURL() { return "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/" }
+def imgURL() { return "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/" }
 def getMemCount(){ return memoryCount ? memoryCount : 2 }
 def getSwitchAbout(){ return "Created by Google Home Helper SmartApp" }
 //Version/Copyright/Information/Help
