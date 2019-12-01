@@ -21,9 +21,9 @@ definition(
     author: "Michael Struck",
     description: "Allows for setting up various schedule scenarios for turning on and off home ventilation switches.",
     category: "Convenience",
-    iconUrl: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/Smart-Home-Ventilation/HomeVent.png",
-    iconX2Url: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/Smart-Home-Ventilation/HomeVent@2x.png",
-    iconX3Url: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/Smart-Home-Ventilation/HomeVent@2x.png")
+    iconUrl: "https://github.com/JohntGB/SmartThingsZZZ/tree/master/Other-SmartApps/Smart-Home-Ventilation/HomeVent.png",
+    iconX2Url: "https://github.com/JohntGB/SmartThingsZZZ/tree/master/Other-SmartApps/Smart-Home-Ventilation/HomeVent@2x.png",
+    iconX3Url: "https://github.com/JohntGB/SmartThingsZZZ/tree/master/Other-SmartApps/Smart-Home-Ventilation/HomeVent@2x.png")
 
 preferences {
 	page name: "mainPage"

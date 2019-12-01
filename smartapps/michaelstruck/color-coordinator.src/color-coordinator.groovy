@@ -25,8 +25,8 @@ definition(
 	author: "Michael Struck",
 	description: "Ties multiple colored lights to one specific light's settings",
 	category: "Convenience",
-	iconUrl: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/ColorCoordinator/CC.png",
-	iconX2Url: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/ColorCoordinator/CC@2x.png"//,
+	iconUrl: "https://github.com/JohntGB/SmartThingsZZZ/tree/master/Other-SmartApps/ColorCoordinator/CC.png",
+	iconX2Url: "https://github.com/JohntGB/SmartThingsZZZ/tree/master/Other-SmartApps/ColorCoordinator/CC@2x.png"//,
 	//pausable: true
 )
 
