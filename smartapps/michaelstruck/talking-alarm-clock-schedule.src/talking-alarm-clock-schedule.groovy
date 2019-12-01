@@ -39,7 +39,7 @@ definition(
     author: "Michael Struck",
     description: "Child app (do not publish) to control various waking schedules using a SmartThings connected speaker as an alarm.",
     category: "Convenience",
-    parent: "MichaelStruck:Talking Alarm Clock",
+    parent: "JohntGB:Talking Alarm Clock",
     iconUrl: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock.png",
     iconX2Url: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png",
 	iconX3Url: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png"

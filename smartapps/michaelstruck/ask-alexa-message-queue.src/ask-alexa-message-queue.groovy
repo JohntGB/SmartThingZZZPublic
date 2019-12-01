@@ -31,7 +31,7 @@ definition(
     author: "Michael Struck",
     description: "Extension Application of Ask Alexa. Do not install directly from the Marketplace",
     category: "My Apps",
-    parent: "MichaelStruck:Ask Alexa",
+    parent: "JohntGB:Ask Alexa",
     iconUrl: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/ext.png",
     iconX2Url: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/ext@2x.png",
     iconX3Url: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/ext@2x.png",
