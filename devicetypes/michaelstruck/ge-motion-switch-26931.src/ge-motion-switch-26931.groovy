@@ -23,7 +23,7 @@
  *
  */
 metadata {
-	definition (name: "GE Motion Switch 26931", namespace: "MichaelStruck", author: "Michael Struck", mnmn:"SmartThings", vid: "generic-switch") {
+	definition (name: "GE Motion Switch 26931", namespace: "JohntGB", author: "Michael Struck", mnmn:"SmartThings", vid: "generic-switch") {
 		capability "Motion Sensor"
         capability "Actuator"
  		capability "Switch"

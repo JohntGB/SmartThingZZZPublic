@@ -19,7 +19,7 @@
  *
  */
 metadata {
-	definition (name: "Momentary Button Tile-Google", namespace: "MichaelStruck", author: "SmartThings") {
+	definition (name: "Momentary Button Tile-Google", namespace: "JohntGB", author: "SmartThings") {
 		capability "Actuator"
 		capability "Switch"
 		capability "Momentary"

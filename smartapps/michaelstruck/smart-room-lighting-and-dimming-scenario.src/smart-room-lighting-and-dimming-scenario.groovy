@@ -24,11 +24,11 @@
  
 definition(
     name: "Smart Room Lighting and Dimming-Scenario",
-    namespace: "MichaelStruck",
+    namespace: "JohntGB",
     author: "Michael Struck",
     description: "Child app (do not publish) that allows for control of light/dimmers based on motion and lux levels.",
     category: "Convenience",
-    parent: "MichaelStruck:Smart Room Lighting and Dimming",
+    parent: "JohntGB:Smart Room Lighting and Dimming",
     iconUrl: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/smart-room-lighting-and-dimming-scenario.src/SmartLight.png",
     iconX2Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/smart-room-lighting-and-dimming-scenario.src/SmartLight@2x.png",
 	iconX3Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/smart-room-lighting-and-dimming-scenario.src/SmartLight@2x.png"

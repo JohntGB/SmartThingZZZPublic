@@ -30,13 +30,13 @@
 definition(
     name: "Talking Alarm Clock",
     singleInstance: true,
-    namespace: "MichaelStruck",
+    namespace: "JohntGB",
     author: "Michael Struck",
     description: "Control various waking schedules using a Sonos speaker as an alarm.",
     category: "My Apps",
-    iconUrl: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock.png",
-    iconX2Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png",
-	iconX3Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png"
+    iconUrl: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock.png",
+    iconX2Url: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png",
+	iconX3Url: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png"
     )
 preferences {
     page name:"mainPage"
@@ -47,7 +47,7 @@ preferences {
 def mainPage() {
 	dynamicPage(name: "mainPage", title: "Talking Alarm Clock Schedules", install: true, uninstall: false) {
 		section {
-            app(name: "childSchedules", appName: "Talking Alarm Clock-Schedule", namespace: "MichaelStruck", title: "Create New Alarm Schedule...", multiple: true, 
+            app(name: "childSchedules", appName: "Talking Alarm Clock-Schedule", namespace: "JohntGB", title: "Create New Alarm Schedule...", multiple: true, 
             	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/add.png")
 		}
 		section([title:"Options", mobileOnly:true]) {
@@ -60,7 +60,7 @@ def mainPage() {
 def pageAbout(){
 	dynamicPage(name: "pageAbout", uninstall: true) {
 		section {
-        	paragraph "${textAppName()}\n${textCopyright()}", image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png"
+        	paragraph "${textAppName()}\n${textCopyright()}", image: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png"
         }
         section ("SmartApp Versions") {
     		paragraph textVersion()

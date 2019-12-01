@@ -35,14 +35,14 @@
  */ 
 definition(
     name: "Talking Alarm Clock-Schedule",
-    namespace: "MichaelStruck",
+    namespace: "JohntGB",
     author: "Michael Struck",
     description: "Child app (do not publish) to control various waking schedules using a SmartThings connected speaker as an alarm.",
     category: "Convenience",
-    parent: "MichaelStruck:Talking Alarm Clock",
-    iconUrl: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock.png",
-    iconX2Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png",
-	iconX3Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png"
+    parent: "JohntGB:Talking Alarm Clock",
+    iconUrl: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock.png",
+    iconX2Url: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png",
+	iconX3Url: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png"
     )
 preferences {
 	page name:"pageSetup"
@@ -538,27 +538,27 @@ private alarmSoundUri(){
     switch(soundAlarm) {
     	case "1":
         	newSoundLength = soundLength >0 && soundLength < 8 ? soundLength : 8
-            soundUri = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/AlarmSounds/AlarmAlien.mp3", duration: "${newSoundLength}"]
+            soundUri = [uri: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/Talking-Alarm-Clock/AlarmSounds/AlarmAlien.mp3", duration: "${newSoundLength}"]
         	break
         case "2":
         	newSoundLength = soundLength >0 && soundLength < 12 ? soundLength : 12
-            soundUri = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/AlarmSounds/AlarmBell.mp3", duration: "${newSoundLength}"]
+            soundUri = [uri: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/Talking-Alarm-Clock/AlarmSounds/AlarmBell.mp3", duration: "${newSoundLength}"]
         	break
         case "3":
         	newSoundLength = soundLength >0 && soundLength < 20 ? soundLength : 20
-            soundUri = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/AlarmSounds/AlarmBuzzer.mp3", duration: "${newSoundLength}"]
+            soundUri = [uri: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/Talking-Alarm-Clock/AlarmSounds/AlarmBuzzer.mp3", duration: "${newSoundLength}"]
         	break
         case "4":
         	newSoundLength = soundLength >0 && soundLength < 20 ? soundLength : 20
-            soundUri = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/AlarmSounds/AlarmFire.mp3", duration: "${newSoundLength}"]
+            soundUri = [uri: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/Talking-Alarm-Clock/AlarmSounds/AlarmFire.mp3", duration: "${newSoundLength}"]
         	break
         case "5":
         	newSoundLength = soundLength >0 && soundLength < 2 ? soundLength : 2
-            soundUri = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/AlarmSounds/AlarmRooster.mp3", duration: "${newSoundLength}"]
+            soundUri = [uri: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/Talking-Alarm-Clock/AlarmSounds/AlarmRooster.mp3", duration: "${newSoundLength}"]
         	break
         case "6":
         	newSoundLength = soundLength >0 && soundLength < 20 ? soundLength : 20
-            soundUri = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/AlarmSounds/AlarmSiren.mp3", duration: "${newSoundLength}"]
+            soundUri = [uri: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/Talking-Alarm-Clock/AlarmSounds/AlarmSiren.mp3", duration: "${newSoundLength}"]
 			break
 		case "7":
         	newSoundLength = soundLength >0 && soundLength < 20 ? soundLength : 20

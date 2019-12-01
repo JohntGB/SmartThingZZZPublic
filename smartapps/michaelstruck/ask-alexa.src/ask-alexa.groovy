@@ -21,7 +21,7 @@
  */
 definition(
     name: "Ask Alexa${parent ? " - Macro " : ""}",
-    namespace: "MichaelStruck",
+    namespace: "JohntGB",
     //Change line below to 'false' to allow for multi app install (Advanced...see instructions)
     	singleInstance: true,
     //-----------------------------------------------------------
@@ -201,7 +201,7 @@ def pageSchdr() {
         }
 		if (schCount) section(schCount==1 ? "One schedule configured" : schCount + " schedules configured" ){}
         section(" "){
-        	app(name: "childSCHD", appName: "Ask Alexa Schedule", namespace: "MichaelStruck", title: "Create A New Schedule...", description: "Tap to create a new schedule", multiple: true, image: imgURL() + "add.png")
+        	app(name: "childSCHD", appName: "Ask Alexa Schedule", namespace: "JohntGB", title: "Create A New Schedule...", description: "Tap to create a new schedule", multiple: true, image: imgURL() + "add.png")
         }
 	}
 }
@@ -486,7 +486,7 @@ def pageVoiceRPT() {
         }
         if (vrCount) section(vrCount==1 ? "One voice report configured" : vrCount + " voice reports configured" ){} 
         section(" "){
-        	app(name: "childVR", appName: "Ask Alexa Voice Report", namespace: "MichaelStruck", title: "Create A New Voice Report...", description: "Tap to create a new report", multiple: true, image: imgURL() + "add.png")
+        	app(name: "childVR", appName: "Ask Alexa Voice Report", namespace: "JohntGB", title: "Create A New Voice Report...", description: "Tap to create a new report", multiple: true, image: imgURL() + "add.png")
         }
 	}
 }
@@ -503,7 +503,7 @@ def pageWeather() {
         }
         if (wrCount) section(wrCount==1 ? "One weather report configured" : wrCount + " weather reports configured" ){}    
         section(" "){
-        	app(name: "childWR", appName: "Ask Alexa Weather Report", namespace: "MichaelStruck", title: "Create A New Weather Report...", description: "Tap to create a new report", multiple: true, image: imgURL() + "add.png")
+        	app(name: "childWR", appName: "Ask Alexa Weather Report", namespace: "JohntGB", title: "Create A New Weather Report...", description: "Tap to create a new report", multiple: true, image: imgURL() + "add.png")
         }
 	}
 }
@@ -516,7 +516,7 @@ def pageMacros() {
         }
         if (macroCount) section(macroCount==1 ? "One macro configured" : macroCount + " macros configured" ){}
         section(" "){
-        	app(name: "childMacros", appName: "Ask Alexa", namespace: "MichaelStruck", title: "Create A New Macro...", description: "Tap to create a new macro", multiple: true, image: imgURL() + "add.png")
+        	app(name: "childMacros", appName: "Ask Alexa", namespace: "JohntGB", title: "Create A New Macro...", description: "Tap to create a new macro", multiple: true, image: imgURL() + "add.png")
         }
 	}
 }
@@ -532,7 +532,7 @@ def pageRooms() {
        }
        if (rmCount) section(rmCount==1 ? "One room / group configured" : rmCount + " rooms / groups configured" ){}
        section(" "){
-        	app(name: "childRooms", appName: "Ask Alexa Rooms/Groups", namespace: "MichaelStruck", title: "Create A New Room/Group...", description: "Tap to create a room/group", multiple: true, image: imgURL() + "add.png")
+        	app(name: "childRooms", appName: "Ask Alexa Rooms/Groups", namespace: "JohntGB", title: "Create A New Room/Group...", description: "Tap to create a room/group", multiple: true, image: imgURL() + "add.png")
         }
 	}
 }
@@ -809,7 +809,7 @@ def pageMsgQue() {
         	href "pagePriQueue", title: "Primary Message Queue", description: "", state:"complete"
         }
         section(" "){
-        	app(name: "childMQ", appName: "Ask Alexa Message Queue", namespace: "MichaelStruck", title: "Create A New Message Queue...", description: "Tap to create a new message queue", multiple: true, image: imgURL() + "add.png")
+        	app(name: "childMQ", appName: "Ask Alexa Message Queue", namespace: "JohntGB", title: "Create A New Message Queue...", description: "Tap to create a new message queue", multiple: true, image: imgURL() + "add.png")
         }
 	}
 }
@@ -2800,12 +2800,12 @@ def kelvinOptions(){ return ["${parent.kSoftWhite}" : "Soft White (${parent.kSof
     "${parent.kCoolWhite}": "Cool White (${parent.kCoolWhite}K)", "${parent.kDayWhite}" : "Daylight White (${parent.kDayWhite}K)"] 
 } 
 def imgURL() { return "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/" }
-def getAskAlexa(){ return findAllChildAppsByNamespaceAndName("MichaelStruck", "Ask Alexa") }
-def getAAMQ() { return findAllChildAppsByNamespaceAndName("MichaelStruck", "Ask Alexa Message Queue") }
-def getSCHD() { return findAllChildAppsByNamespaceAndName("MichaelStruck", "Ask Alexa Schedule") }
-def getWR() { return findAllChildAppsByNamespaceAndName("MichaelStruck", "Ask Alexa Weather Report") }
-def getVR() { return findAllChildAppsByNamespaceAndName("MichaelStruck", "Ask Alexa Voice Report") }
-def getRM() { return findAllChildAppsByNamespaceAndName("MichaelStruck", "Ask Alexa Rooms/Groups") }
+def getAskAlexa(){ return findAllChildAppsByNamespaceAndName("JohntGB", "Ask Alexa") }
+def getAAMQ() { return findAllChildAppsByNamespaceAndName("JohntGB", "Ask Alexa Message Queue") }
+def getSCHD() { return findAllChildAppsByNamespaceAndName("JohntGB", "Ask Alexa Schedule") }
+def getWR() { return findAllChildAppsByNamespaceAndName("JohntGB", "Ask Alexa Weather Report") }
+def getVR() { return findAllChildAppsByNamespaceAndName("JohntGB", "Ask Alexa Voice Report") }
+def getRM() { return findAllChildAppsByNamespaceAndName("JohntGB", "Ask Alexa Rooms/Groups") }
 def macAliasCount() { return 3 }
 def getList(items){
 	def result = "", itemCount=items.size() as int

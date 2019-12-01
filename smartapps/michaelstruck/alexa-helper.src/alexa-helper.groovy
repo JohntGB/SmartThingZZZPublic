@@ -48,7 +48,7 @@
 definition(
     name: "Alexa Helper",
     singleInstance: true,
-    namespace: "MichaelStruck",
+    namespace: "JohntGB",
     author: "Michael Struck",
     description: "Allows for various SmartThings devices to be tied to switches controlled by Amazon Echo('Alexa').",
     category: "My Apps",
@@ -74,7 +74,7 @@ def mainPage() {
                     	"to the latest version to ensure you have the latest features and bug fixes."
             	}
             }
-			app(name: "childScenarios", appName: "Alexa Helper-Scenario", namespace: "MichaelStruck", title: "Create New Alexa Scenario...", multiple: true)
+			app(name: "childScenarios", appName: "Alexa Helper-Scenario", namespace: "JohntGB", title: "Create New Alexa Scenario...", multiple: true)
 		}
 		section("Options") {
 			href "pageSettings", title: "Configure Settings", description: none, 
@@ -174,7 +174,7 @@ def initialize() {
 //Common modules (for adding switches)
 def addChildSwitches(){
     def deviceID = "AH_${app.id}_${getChildDevices().size()}"
-    def nameSpace = "MichaelStruck"
+    def nameSpace = "JohntGB"
     def result
     try {
 		def childDevice = addChildDevice(nameSpace, addSwitchType, deviceID, null, [name: deviceID, label: addSwitchName, completedSetup: true])

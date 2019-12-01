@@ -29,13 +29,13 @@
 definition(
     name: "Smart Bathroom Ventilation",
     singleInstance: true,
-    namespace: "MichaelStruck",
+    namespace: "JohntGB",
     author: "Michael Struck",
     description: "Control multiple ventilation scenarios based on humidity or certain lights being turned on.",
     category: "Convenience",
-    iconUrl: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Smart-Bathroom-Ventilation/BathVent.png",
-    iconX2Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Smart-Bathroom-Ventilation/BathVent@2x.png",
-    iconX3Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Smart-Bathroom-Ventilation/BathVent@2x.png"
+    iconUrl: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/Smart-Bathroom-Ventilation/BathVent.png",
+    iconX2Url: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/Smart-Bathroom-Ventilation/BathVent@2x.png",
+    iconX3Url: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/Smart-Bathroom-Ventilation/BathVent@2x.png"
     )
 
 preferences {
@@ -46,7 +46,7 @@ preferences {
 def mainPage(){
     dynamicPage(name: "mainPage", title: "Ventilation Scenarios", install: true, uninstall: false, submitOnChange: true) {
 		section {
-        	app(name: "childScenarios", appName: "Smart Bathroom Ventilation-Scenario", namespace: "MichaelStruck", title: "Create New Scenario...", multiple: true)
+        	app(name: "childScenarios", appName: "Smart Bathroom Ventilation-Scenario", namespace: "JohntGB", title: "Create New Scenario...", multiple: true)
 		}
 		section([title:"Options", mobileOnly:true]) {
 			href "pageAbout", title: "About ${textAppName()}", description: "Tap to get application version, license, instructions or to remove the application",
@@ -58,7 +58,7 @@ def mainPage(){
 def pageAbout() {
 	dynamicPage(name: "pageAbout" , uninstall: true) {
     	section {
-        paragraph "${textAppName()}\n${textCopyright()}", image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Smart-Bathroom-Ventilation/BathVent@2x.png"
+        paragraph "${textAppName()}\n${textCopyright()}", image: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/Smart-Bathroom-Ventilation/BathVent@2x.png"
         }
         section ("SmartApp Versions") {
 			paragraph textVersion()

@@ -17,13 +17,13 @@
  
 definition(
 	name: "Smart Home Ventilation",
-    namespace: "MichaelStruck",
+    namespace: "JohntGB",
     author: "Michael Struck",
     description: "Allows for setting up various schedule scenarios for turning on and off home ventilation switches.",
     category: "Convenience",
-    iconUrl: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Smart-Home-Ventilation/HomeVent.png",
-    iconX2Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Smart-Home-Ventilation/HomeVent@2x.png",
-    iconX3Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Smart-Home-Ventilation/HomeVent@2x.png")
+    iconUrl: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/Smart-Home-Ventilation/HomeVent.png",
+    iconX2Url: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/Smart-Home-Ventilation/HomeVent@2x.png",
+    iconX3Url: "https://github.com/MichaelStruck/SmartThings/tree/master/Other-SmartApps/Smart-Home-Ventilation/HomeVent@2x.png")
 
 preferences {
 	page name: "mainPage"

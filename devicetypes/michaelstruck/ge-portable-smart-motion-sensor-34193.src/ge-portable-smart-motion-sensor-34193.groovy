@@ -22,7 +22,7 @@
  *
  */
 metadata {
-	definition (name: "GE Portable Smart Motion Sensor 34193", namespace: "MichaelStruck", author: "Michael Struck", ocfDeviceType: "x.com.st.d.sensor.motion") {
+	definition (name: "GE Portable Smart Motion Sensor 34193", namespace: "JohntGB", author: "Michael Struck", ocfDeviceType: "x.com.st.d.sensor.motion") {
 		capability "Motion Sensor"
 		capability "Sensor"
 		capability "Battery"

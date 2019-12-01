@@ -19,11 +19,11 @@
  */
 definition(
 	name: "Alexa Helper-Scenario",
-	namespace: "MichaelStruck",
+	namespace: "JohntGB",
 	author: "Michael Struck",
 	description: "Child app (do not publish) that allows various SmartThings devices to be tied to switches controlled by Amazon Echo('Alexa').",
 	category: "Convenience",
-	parent: "MichaelStruck:Alexa Helper",
+	parent: "JohntGB:Alexa Helper",
 	iconUrl: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/alexa-helper-scenario.src/Alexa.png",
 	iconX2Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/alexa-helper-scenario.src/Alexa%402x.png",
 	iconX3Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/alexa-helper-scenario.src/Alexa%402x.png")    
