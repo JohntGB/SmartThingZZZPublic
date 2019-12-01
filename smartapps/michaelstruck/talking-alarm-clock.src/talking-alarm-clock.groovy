@@ -30,7 +30,7 @@
 definition(
     name: "Talking Alarm Clock",
     singleInstance: true,
-    namespace: "MichaelStruck",
+    namespace: "JohntGB",
     author: "Michael Struck",
     description: "Control various waking schedules using a Sonos speaker as an alarm.",
     category: "My Apps",
@@ -47,7 +47,7 @@ preferences {
 def mainPage() {
 	dynamicPage(name: "mainPage", title: "Talking Alarm Clock Schedules", install: true, uninstall: false) {
 		section {
-            app(name: "childSchedules", appName: "Talking Alarm Clock-Schedule", namespace: "MichaelStruck", title: "Create New Alarm Schedule...", multiple: true, 
+            app(name: "childSchedules", appName: "Talking Alarm Clock-Schedule", namespace: "JohntGB", title: "Create New Alarm Schedule...", multiple: true, 
             	image: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/add.png")
 		}
 		section([title:"Options", mobileOnly:true]) {

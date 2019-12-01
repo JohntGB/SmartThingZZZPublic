@@ -21,7 +21,7 @@
  
 definition(
     name: "Smart Bathroom Ventilation-Scenario",
-    namespace: "MichaelStruck",
+    namespace: "JohntGB",
     author: "Michael Struck",
     description: "Child app (do not publish) that allows ventilation scenarios based on humidity or certain lights being turned on.",
     category: "Convenience",

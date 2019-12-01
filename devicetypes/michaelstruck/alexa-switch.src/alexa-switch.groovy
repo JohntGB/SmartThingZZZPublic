@@ -30,7 +30,7 @@
  */
 
 metadata {
-        definition (name: "Alexa Switch", namespace: "MichaelStruck", author: "SmartThings") {
+        definition (name: "Alexa Switch", namespace: "JohntGB", author: "SmartThings") {
         capability "Switch"
         capability "Switch Level"
 		capability "Actuator"	//included to give compatibility with ActionTiles

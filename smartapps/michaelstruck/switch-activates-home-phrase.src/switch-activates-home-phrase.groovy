@@ -21,7 +21,7 @@
  */
 definition(
     name: "Switch Activates Home Phrase",
-    namespace: "MichaelStruck",
+    namespace: "JohntGB",
     author: "Michael Struck",
     description: "Ties a Hello, Home phrase to a switch's state. Perfect for use with IFTTT.",
     category: "Convenience",

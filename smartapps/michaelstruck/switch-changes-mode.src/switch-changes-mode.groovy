@@ -21,7 +21,7 @@
  */
 definition(
     name: "Switch Changes Mode",
-    namespace: "MichaelStruck",
+    namespace: "JohntGB",
     author: "Michael Struck",
     description: "Ties a mode to a switch's state. Perfect for use with IFTTT.",
     category: "Convenience",

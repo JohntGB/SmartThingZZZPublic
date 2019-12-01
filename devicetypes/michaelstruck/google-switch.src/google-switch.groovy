@@ -20,7 +20,7 @@
  */
 
 metadata {
-        definition (name: "Google Switch", namespace: "MichaelStruck", author: "SmartThings") {
+        definition (name: "Google Switch", namespace: "JohntGB", author: "SmartThings") {
         capability "Switch"
         capability "Switch Level"
         capability "Actuator"	//included to give compatibility with ActionTiles

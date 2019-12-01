@@ -17,7 +17,7 @@
  
 definition(
 	name: "Smart Home Ventilation",
-    namespace: "MichaelStruck",
+    namespace: "JohntGB",
     author: "Michael Struck",
     description: "Allows for setting up various schedule scenarios for turning on and off home ventilation switches.",
     category: "Convenience",

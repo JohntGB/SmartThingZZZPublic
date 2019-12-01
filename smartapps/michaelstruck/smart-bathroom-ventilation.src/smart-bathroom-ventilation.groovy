@@ -29,7 +29,7 @@
 definition(
     name: "Smart Bathroom Ventilation",
     singleInstance: true,
-    namespace: "MichaelStruck",
+    namespace: "JohntGB",
     author: "Michael Struck",
     description: "Control multiple ventilation scenarios based on humidity or certain lights being turned on.",
     category: "Convenience",
@@ -46,7 +46,7 @@ preferences {
 def mainPage(){
     dynamicPage(name: "mainPage", title: "Ventilation Scenarios", install: true, uninstall: false, submitOnChange: true) {
 		section {
-        	app(name: "childScenarios", appName: "Smart Bathroom Ventilation-Scenario", namespace: "MichaelStruck", title: "Create New Scenario...", multiple: true)
+        	app(name: "childScenarios", appName: "Smart Bathroom Ventilation-Scenario", namespace: "JohntGB", title: "Create New Scenario...", multiple: true)
 		}
 		section([title:"Options", mobileOnly:true]) {
 			href "pageAbout", title: "About ${textAppName()}", description: "Tap to get application version, license, instructions or to remove the application",

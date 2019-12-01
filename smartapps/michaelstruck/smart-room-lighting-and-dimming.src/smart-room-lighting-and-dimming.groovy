@@ -30,7 +30,7 @@
 definition(
     name: "Smart Room Lighting and Dimming",
     singleInstance: true,
-    namespace: "MichaelStruck",
+    namespace: "JohntGB",
     author: "Michael Struck",
     description: "Control multiple scenarios of light/dimmers based on motion and lux levels.",
     category: "My Apps",
@@ -47,7 +47,7 @@ preferences {
 def mainPage() {
     dynamicPage(name: "mainPage", title: "Room Scenarios", install: true, uninstall: false, submitOnChange: true) {
             section {
-                    app(name: "childScenarios", appName: "Smart Room Lighting and Dimming-Scenario", namespace: "MichaelStruck", title: "Create New Scenario...", multiple: true)
+                    app(name: "childScenarios", appName: "Smart Room Lighting and Dimming-Scenario", namespace: "JohntGB", title: "Create New Scenario...", multiple: true)
             }
             section([title:"Options", mobileOnly:true]) {
             	href "pageAbout", title: "About ${textAppName()}", description: "Tap to get application version, license, instructions or to remove the application",

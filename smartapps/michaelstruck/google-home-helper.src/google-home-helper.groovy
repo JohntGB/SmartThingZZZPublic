@@ -19,7 +19,7 @@
 definition(
     name: "Google Home Helper${parent ? " - Scenario " : ""}",
     singleInstance: true,
-    namespace: "MichaelStruck",
+    namespace: "JohntGB",
     author: "Michael Struck",
     parent: parent ? "MichaelStruck.Google Home Helper" : null,
     description: "Allows for various SmartThings devices to be tied to switches controlled by Google Home.",
@@ -54,7 +54,7 @@ def pageMain() { if (!parent) mainPageParent() else mainPageChild() }
 def mainPageParent() {
 	dynamicPage(name: "mainPageParent", title: "Google Home Helper Scenarios", install: true, uninstall: false) {
 		section {
-			app(name: "childScenarios", appName: "Google Home Helper", namespace: "MichaelStruck", title: "Create New Google Home Scenario...", multiple: true)
+			app(name: "childScenarios", appName: "Google Home Helper", namespace: "JohntGB", title: "Create New Google Home Scenario...", multiple: true)
 		}
 		section("Options") {
 			href "pageSettings", title: "Configure Settings", description: "Tap to configure app settings", image: imgURL() + "settings.png"

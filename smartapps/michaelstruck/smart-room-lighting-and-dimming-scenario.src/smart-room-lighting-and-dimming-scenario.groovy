@@ -24,7 +24,7 @@
  
 definition(
     name: "Smart Room Lighting and Dimming-Scenario",
-    namespace: "MichaelStruck",
+    namespace: "JohntGB",
     author: "Michael Struck",
     description: "Child app (do not publish) that allows for control of light/dimmers based on motion and lux levels.",
     category: "Convenience",

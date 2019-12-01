@@ -22,7 +22,7 @@
  *
  */
 metadata {
-	definition (name: "Momentary Button Tile", namespace: "MichaelStruck", author: "SmartThings") {
+	definition (name: "Momentary Button Tile", namespace: "JohntGB", author: "SmartThings") {
 		capability "Actuator"
 		capability "Switch"
 		capability "Momentary"
