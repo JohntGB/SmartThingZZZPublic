@@ -50,7 +50,7 @@ def mainPage(){
 		}
 		section([title:"Options", mobileOnly:true]) {
 			href "pageAbout", title: "About ${textAppName()}", description: "Tap to get application version, license, instructions or to remove the application",
-            	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/img/info.png"
+            	image: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/img/info.png"
 		}
 	}
 }

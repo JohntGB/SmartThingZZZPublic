@@ -62,11 +62,11 @@ def pageSetup() {
         }
 		section("Restrictions") {            
 			input "A_day", "enum", options: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], title: "Only Certain Days Of The Week...",  multiple: true, required: false,
-            	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/img/calendar.png"
+            	image: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/img/calendar.png"
         	href "timeIntervalInputA", title: "Only During Certain Times...", description: getTimeLabel(A_timeStart, A_timeEnd), state: greyedOutTime(A_timeStart, A_timeEnd),
-            	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/img/clock.png"
+            	image: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/img/clock.png"
             input "A_mode", "mode", title: "Only In The Following Modes...", multiple: true, required: false, 
-            	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/img/modes.png"
+            	image: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/img/modes.png"
 		}
         section("Tap the button below to remove this scenario only"){
         }

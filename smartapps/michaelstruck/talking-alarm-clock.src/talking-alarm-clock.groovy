@@ -51,9 +51,9 @@ def mainPage() {
             	image: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/img/add.png")
 		}
 		section([title:"Options", mobileOnly:true]) {
-            href "pageSummary", title: "View/Configure Alarm Summaries", description: none, image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/img/settings.png"
+            href "pageSummary", title: "View/Configure Alarm Summaries", description: none, image: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/img/settings.png"
 			href "pageAbout", title: "About ${textAppName()}", description: "Tap to get application version, license, instructions or to remove the application",
-            	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/img/info.png"
+            	image: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/img/info.png"
 		}
 	}
 }
