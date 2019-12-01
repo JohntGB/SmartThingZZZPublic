@@ -39,7 +39,7 @@ def mainPage() {
 		def masterInList = slaves?.id?.find{it==master?.id}
         if (masterInList) {
         	section ("**WARNING**"){
-            	paragraph "You have included the Master Light in the Slave Group. This will cause a loop in execution. Please remove this device from the Slave Group.", image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/caution.png"
+            	paragraph "You have included the Master Light in the Slave Group. This will cause a loop in execution. Please remove this device from the Slave Group.", image: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/img/caution.png"
             }
         }
         section("Master Light") {

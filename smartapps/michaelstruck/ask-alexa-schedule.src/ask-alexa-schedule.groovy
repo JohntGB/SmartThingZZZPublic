@@ -27,9 +27,9 @@ definition(
     description: "Extension Application of Ask Alexa. Do not install directly from the Marketplace",
     category: "My Apps",
     parent: "JohntGB:Ask Alexa",
-    iconUrl: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/ext.png",
-    iconX2Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/ext@2x.png",
-    iconX3Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/ext@2x.png",
+    iconUrl: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/img/ext.png",
+    iconX2Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/img/ext@2x.png",
+    iconX3Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/img/ext@2x.png",
     )
 preferences {
     page name:"mainPage"

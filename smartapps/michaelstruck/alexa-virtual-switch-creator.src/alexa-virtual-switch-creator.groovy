@@ -130,7 +130,7 @@ def deleteChildSwitches() {
 }
 //Common modules
 def getSwitchAbout(){ return "Created by Alexa Virtual Device Creator" }
-def imgURL() { return "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/" }
+def imgURL() { return "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/img/" }
 //Version/Copyright/Information/Help
 private def textAppName() { return "Alexa Virtual Device Creator" }	
 private def textVersion() {

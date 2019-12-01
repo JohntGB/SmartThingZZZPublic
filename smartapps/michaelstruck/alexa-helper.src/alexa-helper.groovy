@@ -78,14 +78,14 @@ def mainPage() {
 		}
 		section("Options") {
 			href "pageSettings", title: "Configure Settings", description: none, 
-            	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/settings.png"
+            	image: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/img/settings.png"
             if (showAddSwitches) {
             	def titleTxt = getChildDevices().size() > 0 ? "Add/View Virtual Switches" : "Add Virtual Switches"
                 def descTxt = getChildDevices().size() > 1 ? "${getChildDevices().size()} virtual switches created" : getChildDevices().size() == 1 ? "One virtual switch created" : ""
-                href "pageSwitches", title: "${titleTxt}", description: "${descTxt}", image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/add.png"
+                href "pageSwitches", title: "${titleTxt}", description: "${descTxt}", image: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/img/add.png"
 			}
             href "pageAbout", title: "About ${textAppName()}", description: "Tap to get application version, license, instructions or to remove the application",
-            	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/info.png"
+            	image: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/img/info.png"
 		}
 	}
 }
