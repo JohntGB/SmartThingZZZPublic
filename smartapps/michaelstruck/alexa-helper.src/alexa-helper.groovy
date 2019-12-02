@@ -46,7 +46,7 @@
  *  for the specific language governing permissions and limitations under the License.
  */
 definition(
-    name: "Alexa Helper",
+    name: "Alexa Helper JohntGB",
     singleInstance: true,
     namespace: "JohntGB",
     author: "Michael Struck",
@@ -64,7 +64,7 @@ preferences {
 }
 //Show main page
 def mainPage() {
-	dynamicPage(name: "mainPage", title: "Alexa Helper Scenarios", install: true, uninstall: false) {
+	dynamicPage(name: "mainPage", title: "Alexa Helper Scenarios (JohntGB)", install: true, uninstall: false) {
 		section {
         	def childCount = childApps.size()
         	if (childCount){
@@ -126,7 +126,7 @@ def pageSwitches() {
     dynamicPage(name: "pageSwitches", title: "Add/View Virtual Switches", install: false, uninstall: false) {
     	section("New switch information"){
             input "addSwitchName", "text", title: "Switch Label", description: "Enter a unique label name for the virtual switch", required: false, submitOnChange:true
-            input "addSwitchType", "enum", title: "Switch Type...", description: "Choose a switch type", options:["Alexa Switch","Momentary Button Tile"], required: false, submitOnChange:true	
+            input "addSwitchType", "enum", title: "Switch Type...", description: "Choose a switch type", options:["Alexa Switch","Momentary Button Tile", "Alexa Switch to Contact", "Alexa Switch to Motion"], required: false, submitOnChange:true	
             if (addSwitchType && addSwitchName) href "pageAddSwitch",title: "Add Switch", description: none
         }        
         def switchList = ""
@@ -138,6 +138,8 @@ def pageSwitches() {
             getChildDevices().each {
             	if (it.typeName=="Alexa Switch" && state.sw1Ver == "") state.sw1Ver = "Alexa Switch Version: ${it.versionNum()}"
                 if (it.typeName=="Momentary Button Tile" && state.sw2Ver == "") state.sw2Ver = "Momentary Button Tile Version: ${it.versionNum()}"
+				if (it.typeName=="Alexa Switch to Contact" && state.sw2Ver == "") state.sw2Ver = "Alexa Switch to Contact Version: ${it.versionNum()}"
+				if (it.typeName=="Alexa Switch to Motion" && state.sw2Ver == "") state.sw2Ver = "Alexa Switch to Motion Version: ${it.versionNum()}"
                 switchList += "${it.label} (${it.typeName})\n"
             }
 		}

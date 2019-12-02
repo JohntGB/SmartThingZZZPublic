@@ -52,6 +52,14 @@
       "version": "1.0.3",
       "appUrl": "devicetypes/michaelstruck/momentary-button-tile.src/momentary-button-tile.groovy",
       "optional": false
+    },
+    {
+      "name": "Alexa Switch to Contact ",
+      "iconUrl": "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/alexa-helper-scenario.src/Alexa%402x.png",
+      "published": true,
+      "version": "1.0.0",
+      "appUrl": "devicetypes/michaelstruck/alexa-switch-to-contact.src/alexa-switch-to-contact.groovy",
+      "optional": false
     }
   ]
 }
