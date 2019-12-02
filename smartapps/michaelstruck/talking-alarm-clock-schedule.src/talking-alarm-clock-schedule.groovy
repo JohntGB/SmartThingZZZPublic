@@ -35,7 +35,7 @@
  */ 
 definition(
     name: "Talking Alarm Clock-Schedule",
-    namespace: "MichaelStruck",
+    namespace: "JohntGB",
     author: "Michael Struck",
     description: "Child app (do not publish) to control various waking schedules using a SmartThings connected speaker as an alarm.",
     category: "Convenience",

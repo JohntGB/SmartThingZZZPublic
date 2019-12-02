@@ -19,7 +19,7 @@
  */
 definition(
 	name: "Alexa Helper-Scenario",
-	namespace: "MichaelStruck",
+	namespace: "JohntGB",
 	author: "Michael Struck",
 	description: "Child app (do not publish) that allows various SmartThings devices to be tied to switches controlled by Amazon Echo('Alexa').",
 	category: "Convenience",

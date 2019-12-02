@@ -16,7 +16,7 @@
  */
 definition(
     name: "Grandfather Sonos",
-    namespace: "MichaelStruck",
+    namespace: "JohntGB",
     author: "Michael Struck",
     description: "Chimes a Sonos speaker at the top of the hour.",
     category: "Convenience",

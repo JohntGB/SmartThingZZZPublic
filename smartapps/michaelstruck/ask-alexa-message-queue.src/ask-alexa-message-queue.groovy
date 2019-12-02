@@ -27,7 +27,7 @@
  */
 definition(
     name: "Ask Alexa Message Queue",
-    namespace: "MichaelStruck",
+    namespace: "JohntGB",
     author: "Michael Struck",
     description: "Extension Application of Ask Alexa. Do not install directly from the Marketplace",
     category: "My Apps",

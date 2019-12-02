@@ -20,7 +20,7 @@
 definition(
     name: "Alexa Virtual Device Creator",
     singleInstance: true,
-    namespace: "MichaelStruck",
+    namespace: "JohntGB",
     author: "Michael Struck",
     description: "Allows for creation of SmartThings virtual devices that can be tied to items controlled by Amazon Echo('Alexa').",
     category: "My Apps",

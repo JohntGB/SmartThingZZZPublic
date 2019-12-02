@@ -31,7 +31,7 @@
  */
 definition(
     name: "Cloud Interface",
-    namespace: "MichaelStruck",
+    namespace: "JohntGB",
     author: "Michael Struck",
     description: "Allows for URL cloud interfacing to control SmartThings devices.",
     category: "Convenience",

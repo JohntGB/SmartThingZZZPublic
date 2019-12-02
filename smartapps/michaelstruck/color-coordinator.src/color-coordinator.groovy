@@ -21,7 +21,7 @@
  */
 definition(
 	name: "Color Coordinator",
-	namespace: "MichaelStruck",
+	namespace: "JohntGB",
 	author: "Michael Struck",
 	description: "Ties multiple colored lights to one specific light's settings",
 	category: "Convenience",
