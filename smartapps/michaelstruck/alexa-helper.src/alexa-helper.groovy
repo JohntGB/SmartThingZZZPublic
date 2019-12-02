@@ -50,7 +50,7 @@ definition(
     singleInstance: true,
     namespace: "JohntGB",
     author: "Michael Struck",
-    description: "Allows for various SmartThings devices to be tied to switches controlled by Amazon Echo('Alexa').",
+    description: "Allows for various SmartThings devices to be tied to switches controlled by Amazon Echo('Alexa') - JohntGB.",
     category: "My Apps",
     iconUrl: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/alexa-helper.src/Alexa.png",
     iconX2Url: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/alexa-helper.src/Alexa@2x.png",

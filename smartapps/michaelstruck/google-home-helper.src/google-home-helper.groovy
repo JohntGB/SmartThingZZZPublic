@@ -22,7 +22,7 @@ definition(
     namespace: "JohntGB",
     author: "Michael Struck",
     parent: parent ? "JohntGB.Google Home Helper" : null,
-    description: "Allows for various SmartThings devices to be tied to switches controlled by Google Home.",
+    description: "Allows for various SmartThings devices to be tied to switches controlled by Google Home. - JohntGB",
     category: "My Apps",
     iconUrl: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/google-home-helper.src/GoogleHome.png",
     iconX2Url: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/google-home-helper.src/GoogleHome@2x.png",
