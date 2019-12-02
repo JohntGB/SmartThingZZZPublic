@@ -23,7 +23,7 @@ definition(
 	author: "Michael Struck",
 	description: "Child app (do not publish) that allows various SmartThings devices to be tied to switches controlled by Amazon Echo('Alexa').",
 	category: "Convenience",
-	parent: "MichaelStruck:Alexa Helper",
+	parent: "JohntGB:Alexa Helper",
 	iconUrl: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/alexa-helper-scenario.src/Alexa.png",
 	iconX2Url: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/alexa-helper-scenario.src/Alexa%402x.png",
 	iconX3Url: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/alexa-helper-scenario.src/Alexa%402x.png")    

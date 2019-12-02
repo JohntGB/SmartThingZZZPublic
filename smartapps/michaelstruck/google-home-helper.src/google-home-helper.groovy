@@ -21,7 +21,7 @@ definition(
     singleInstance: true,
     namespace: "JohntGB",
     author: "Michael Struck",
-    parent: parent ? "MichaelStruck.Google Home Helper" : null,
+    parent: parent ? "JohntGB.Google Home Helper" : null,
     description: "Allows for various SmartThings devices to be tied to switches controlled by Google Home.",
     category: "My Apps",
     iconUrl: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/google-home-helper.src/GoogleHome.png",
@@ -517,7 +517,7 @@ private initializeChild(){
 //Common modules (for adding switches)
 def addChildSwitches(){
     def deviceID = "GHH_${app.id}_${getChildDevices().size()}"
-    def nameSpace = "MichaelStruck"
+    def nameSpace = "JohntGB"
     def result
     try {
 		def childDevice = addChildDevice(nameSpace, addSwitchType, deviceID, null, [name: deviceID, label: addSwitchName, completedSetup: true])

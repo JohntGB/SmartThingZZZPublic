@@ -2800,12 +2800,12 @@ def kelvinOptions(){ return ["${parent.kSoftWhite}" : "Soft White (${parent.kSof
     "${parent.kCoolWhite}": "Cool White (${parent.kCoolWhite}K)", "${parent.kDayWhite}" : "Daylight White (${parent.kDayWhite}K)"] 
 } 
 def imgURL() { return "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/" }
-def getAskAlexa(){ return findAllChildAppsByNamespaceAndName("MichaelStruck", "Ask Alexa") }
-def getAAMQ() { return findAllChildAppsByNamespaceAndName("MichaelStruck", "Ask Alexa Message Queue") }
-def getSCHD() { return findAllChildAppsByNamespaceAndName("MichaelStruck", "Ask Alexa Schedule") }
-def getWR() { return findAllChildAppsByNamespaceAndName("MichaelStruck", "Ask Alexa Weather Report") }
-def getVR() { return findAllChildAppsByNamespaceAndName("MichaelStruck", "Ask Alexa Voice Report") }
-def getRM() { return findAllChildAppsByNamespaceAndName("MichaelStruck", "Ask Alexa Rooms/Groups") }
+def getAskAlexa(){ return findAllChildAppsByNamespaceAndName("JohntGB", "Ask Alexa") }
+def getAAMQ() { return findAllChildAppsByNamespaceAndName("JohntGB", "Ask Alexa Message Queue") }
+def getSCHD() { return findAllChildAppsByNamespaceAndName("JohntGB", "Ask Alexa Schedule") }
+def getWR() { return findAllChildAppsByNamespaceAndName("JohntGB", "Ask Alexa Weather Report") }
+def getVR() { return findAllChildAppsByNamespaceAndName("JohntGB", "Ask Alexa Voice Report") }
+def getRM() { return findAllChildAppsByNamespaceAndName("JohntGB", "Ask Alexa Rooms/Groups") }
 def macAliasCount() { return 3 }
 def getList(items){
 	def result = "", itemCount=items.size() as int
