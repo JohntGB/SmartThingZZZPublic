@@ -50,10 +50,10 @@ metadata {
 	tiles(scale: 2) {
 		multiAttributeTile(name: "switch", type: "lighting", width: 6, height: 4, canChangeIcon: true, canChangeBackground: true) {
 			tileAttribute("device.switch", key: "PRIMARY_CONTROL") {
-    			attributeState "off", label: '${name}', action: "switch.on", backgroundColor: "#ffffff",icon: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/AlexaHelper/AH-Off.png", nextState: "turningOn"
-		      	attributeState "on", label: '${name}', action: "switch.off", backgroundColor: "#79b821",icon: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/AlexaHelper/AH-On.png",  nextState: "turningOff"
-				attributeState "turningOff", label: '${name}', action: "switch.on",backgroundColor: "#ffffff", icon: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/AlexaHelper/AH-Off.png",  nextState: "turningOn"
-		      	attributeState "turningOn", label: '${name}', action: "switch.off",backgroundColor: "#79b821", icon: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/AlexaHelper/AH-On.png", nextState: "turningOff"
+    			attributeState "off", label: '${name}', action: "switch.on", backgroundColor: "#ffffff",icon: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/AlexaHelper/AH-Off.png", nextState: "turningOn"
+		      	attributeState "on", label: '${name}', action: "switch.off", backgroundColor: "#79b821",icon: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/AlexaHelper/AH-On.png",  nextState: "turningOff"
+				attributeState "turningOff", label: '${name}', action: "switch.on",backgroundColor: "#ffffff", icon: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/AlexaHelper/AH-Off.png",  nextState: "turningOn"
+		      	attributeState "turningOn", label: '${name}', action: "switch.off",backgroundColor: "#79b821", icon: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/AlexaHelper/AH-On.png", nextState: "turningOff"
         	}
         		tileAttribute("device.level", key: "SLIDER_CONTROL") {
             		attributeState "level", action:"switch level.setLevel"

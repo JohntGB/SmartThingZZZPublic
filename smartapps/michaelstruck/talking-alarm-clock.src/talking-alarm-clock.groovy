@@ -34,9 +34,9 @@ definition(
     author: "Michael Struck",
     description: "Control various waking schedules using a Sonos speaker as an alarm.",
     category: "My Apps",
-    iconUrl: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock.png",
-    iconX2Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png",
-	iconX3Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png"
+    iconUrl: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock.png",
+    iconX2Url: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png",
+	iconX3Url: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png"
     )
 preferences {
     page name:"mainPage"
@@ -51,16 +51,16 @@ def mainPage() {
             	image: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/add.png")
 		}
 		section([title:"Options", mobileOnly:true]) {
-            href "pageSummary", title: "View/Configure Alarm Summaries", description: none, image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/img/settings.png"
+            href "pageSummary", title: "View/Configure Alarm Summaries", description: none, image: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/img/settings.png"
 			href "pageAbout", title: "About ${textAppName()}", description: "Tap to get application version, license, instructions or to remove the application",
-            	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/img/info.png"
+            	image: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/img/info.png"
 		}
 	}
 }
 def pageAbout(){
 	dynamicPage(name: "pageAbout", uninstall: true) {
 		section {
-        	paragraph "${textAppName()}\n${textCopyright()}", image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png"
+        	paragraph "${textAppName()}\n${textCopyright()}", image: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png"
         }
         section ("SmartApp Versions") {
     		paragraph textVersion()

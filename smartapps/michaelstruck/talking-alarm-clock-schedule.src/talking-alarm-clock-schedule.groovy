@@ -40,9 +40,9 @@ definition(
     description: "Child app (do not publish) to control various waking schedules using a SmartThings connected speaker as an alarm.",
     category: "Convenience",
     parent: "MichaelStruck:Talking Alarm Clock",
-    iconUrl: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock.png",
-    iconX2Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png",
-	iconX3Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png"
+    iconUrl: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock.png",
+    iconX2Url: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png",
+	iconX3Url: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png"
     )
 preferences {
 	page name:"pageSetup"
@@ -129,11 +129,11 @@ def pageAlarmTriggers(){
     dynamicPage(name: "pageAlarmTriggers", title: "Alarm Triggers", install: false, uninstall: false) {
         section{
             input "alarmStart", "time", title: "At Specific Time", required: false,
-            	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/img/clock.png"
+            	image: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/img/clock.png"
             input "alarmTrigger", "capability.switch", title: "When Switches Turned On...", required: false, multiple: true,
-            	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/img/on.png"
+            	image: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/img/on.png"
             input "alarmPresenceTrigger", "capability.presenceSensor", title: "When Someone Arrives...", multiple: true, required: false, submitOnChange:true,
-            	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/img/people.png"
+            	image: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/img/people.png"
             if (alarmPresenceTrigger) input "alarmPresenceTriggerTime", "number", title: "Minutes After Presence to Alarm", defaultValue: 0, required: false
         }
     }
@@ -142,18 +142,18 @@ def pageRestrictions(){
     dynamicPage(name: "pageRestrictions", title: "Alarm Restrictions", install: false, uninstall: false){
         section{
             input "alarmDay", "enum", options: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], title: "Only Certain Days Of The Week...", multiple: true, required: false,
-            	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/img/calendar.png"
+            	image: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/img/calendar.png"
             href "timeIntervalInput", title: "Only During Certain Times...", description: getTimeLabel(timeStart, timeEnd), state: greyOutState(timeStart, timeEnd),
-            	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/img/clock.png"
+            	image: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/img/clock.png"
             input "alarmMode", "mode", title: "Only In The Following Modes...", multiple: true, required: false,
-            	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/img/modes.png"
+            	image: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/img/modes.png"
             input "alarmPresence", "capability.presenceSensor", title: "Only When Present...", multiple: true, required: false, submitOnChange:true,
-            	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/img/people.png"
+            	image: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/img/people.png"
             if (alarmPresence && alarmPresence.size()>1) input "alarmPresAll", "bool", title: "Off=Any Present; On=All Present", defaultValue: false
             input "alarmSwitchActive", "capability.switch", title: "Only When Switches Are On...", multiple: true, required: false,
-            	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/img/on.png"
+            	image: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/img/on.png"
             input "alarmSwitchNotActive", "capability.switch", title: "Only When Switches Are Off...", multiple: true, required: false,
-            	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/img/off.png"
+            	image: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/img/off.png"
         }
     }
 }
@@ -538,27 +538,27 @@ private alarmSoundUri(){
     switch(soundAlarm) {
     	case "1":
         	newSoundLength = soundLength >0 && soundLength < 8 ? soundLength : 8
-            soundUri = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/AlarmSounds/AlarmAlien.mp3", duration: "${newSoundLength}"]
+            soundUri = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/Talking-Alarm-Clock/AlarmSounds/AlarmAlien.mp3", duration: "${newSoundLength}"]
         	break
         case "2":
         	newSoundLength = soundLength >0 && soundLength < 12 ? soundLength : 12
-            soundUri = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/AlarmSounds/AlarmBell.mp3", duration: "${newSoundLength}"]
+            soundUri = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/Talking-Alarm-Clock/AlarmSounds/AlarmBell.mp3", duration: "${newSoundLength}"]
         	break
         case "3":
         	newSoundLength = soundLength >0 && soundLength < 20 ? soundLength : 20
-            soundUri = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/AlarmSounds/AlarmBuzzer.mp3", duration: "${newSoundLength}"]
+            soundUri = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/Talking-Alarm-Clock/AlarmSounds/AlarmBuzzer.mp3", duration: "${newSoundLength}"]
         	break
         case "4":
         	newSoundLength = soundLength >0 && soundLength < 20 ? soundLength : 20
-            soundUri = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/AlarmSounds/AlarmFire.mp3", duration: "${newSoundLength}"]
+            soundUri = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/Talking-Alarm-Clock/AlarmSounds/AlarmFire.mp3", duration: "${newSoundLength}"]
         	break
         case "5":
         	newSoundLength = soundLength >0 && soundLength < 2 ? soundLength : 2
-            soundUri = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/AlarmSounds/AlarmRooster.mp3", duration: "${newSoundLength}"]
+            soundUri = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/Talking-Alarm-Clock/AlarmSounds/AlarmRooster.mp3", duration: "${newSoundLength}"]
         	break
         case "6":
         	newSoundLength = soundLength >0 && soundLength < 20 ? soundLength : 20
-            soundUri = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/AlarmSounds/AlarmSiren.mp3", duration: "${newSoundLength}"]
+            soundUri = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/Talking-Alarm-Clock/AlarmSounds/AlarmSiren.mp3", duration: "${newSoundLength}"]
 			break
 		case "7":
         	newSoundLength = soundLength >0 && soundLength < 20 ? soundLength : 20
