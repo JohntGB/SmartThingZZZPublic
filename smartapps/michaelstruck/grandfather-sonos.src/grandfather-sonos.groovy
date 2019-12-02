@@ -20,9 +20,9 @@ definition(
     author: "Michael Struck",
     description: "Chimes a Sonos speaker at the top of the hour.",
     category: "Convenience",
-    iconUrl: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/grandfather-sonos.src/grandfather.png",
-    iconX2Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/grandfather-sonos.src/grandfather.png",
-    iconX3Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/grandfather-sonos.src/grandfather.png")
+    iconUrl: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/grandfather-sonos.src/grandfather.png",
+    iconX2Url: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/grandfather-sonos.src/grandfather.png",
+    iconX3Url: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/grandfather-sonos.src/grandfather.png")
 preferences {
     page name:"mainPage"
     page name:"pageAbout"
@@ -47,7 +47,7 @@ def mainPage() {
 def pageAbout(){
 	dynamicPage(name: "pageAbout", uninstall: true) {
 		section {
-        	paragraph "${textAppName()}\n${textVersion()}\n${textCopyright()}", image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/grandfather-sonos.src/grandfather.png"
+        	paragraph "${textAppName()}\n${textVersion()}\n${textCopyright()}", image: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/grandfather-sonos.src/grandfather.png"
         }   
         section ("Apache License") {
         	paragraph "${textLicense()}"
@@ -83,7 +83,7 @@ def playChime() {
 	if (speakers && getOkToRun()) {
     	def hour = parseHour() as int
         if (volume) {speakers?.setLevel(volume)}
-        def filename = "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/grandfather-sonos.src/${hour}oclock.mp3"
+        def filename = "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/grandfather-sonos.src/${hour}oclock.mp3"
        	def duration = (hour * 2) + 23
 		speakers?.playSoundAndTrack (filename,duration,"")    
 	}
@@ -123,7 +123,7 @@ private parseHour(){
 }
 private timeParse(time, type) { return new Date().parse("yyyy-MM-dd'T'HH:mm:ss.SSSZ", time).format("${type}", location.timeZone)}
 //-----------------------------------------------------------------------
-def imgURL() { return "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/" }
+def imgURL() { return "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/" }
 //Version/Copyright/Information/Help
 private def textAppName() { def text = "Grandfather Sonos"}	
 private def textVersion() { def version = "Version 1.0.0 (12/19/2016)" }

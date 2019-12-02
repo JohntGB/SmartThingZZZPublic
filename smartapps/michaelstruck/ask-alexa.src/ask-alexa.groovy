@@ -29,9 +29,9 @@ definition(
     parent: parent ? "JohntGB.Ask Alexa" : null,
     description: "Provide interfacing to control and report on SmartThings devices with the Amazon Echo ('Alexa').",
     category: "My Apps",
-    iconUrl: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/ask-alexa.src/AskAlexa.png",
-    iconX2Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/ask-alexa.src/AskAlexa@2x.png",
-    iconX3Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/ask-alexa.src/AskAlexa@2x.png",
+    iconUrl: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/ask-alexa.src/AskAlexa.png",
+    iconX2Url: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/ask-alexa.src/AskAlexa@2x.png",
+    iconX3Url: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/ask-alexa.src/AskAlexa@2x.png",
   	oauth: true)
 preferences {
     page name:"pageMain"
@@ -538,7 +538,7 @@ def pageRooms() {
 }
 def pageAbout(){
 	dynamicPage(name: "pageAbout", uninstall: true) {
-        section { paragraph "${textAppName()}\n${textCopyright()}", image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/ask-alexa.src/AskAlexa@2x.png" }
+        section { paragraph "${textAppName()}\n${textCopyright()}", image: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/ask-alexa.src/AskAlexa@2x.png" }
         section ("Version numbers") { paragraph "${textVersion()}" } 
         section (title: "Access token / Application ID", hideable: true, hidden: true){
             if (!state.accessToken) OAuthToken()
@@ -2799,7 +2799,7 @@ def battOptions() { return  [5:"<5%",10:"<10%",20:"<20%",30:"<30%",40:"<40%",50:
 def kelvinOptions(){ return ["${parent.kSoftWhite}" : "Soft White (${parent.kSoftWhite}K)", "${parent.kWarmWhite}" : "Warm White (${parent.kWarmWhite}K)", 
     "${parent.kCoolWhite}": "Cool White (${parent.kCoolWhite}K)", "${parent.kDayWhite}" : "Daylight White (${parent.kDayWhite}K)"] 
 } 
-def imgURL() { return "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/" }
+def imgURL() { return "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/" }
 def getAskAlexa(){ return findAllChildAppsByNamespaceAndName("MichaelStruck", "Ask Alexa") }
 def getAAMQ() { return findAllChildAppsByNamespaceAndName("MichaelStruck", "Ask Alexa Message Queue") }
 def getSCHD() { return findAllChildAppsByNamespaceAndName("MichaelStruck", "Ask Alexa Schedule") }
@@ -2858,19 +2858,19 @@ def soundFXList(){
 }
 def sfxLookup(sfx){
 	def result 
-    if (sfx=="1") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/checkyourmailbox.mp3", duration:"6"]
-	else if (sfx=="2") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/dr-evil-youve-got-freakin-mail.mp3", duration:"2"]
-    else if (sfx=="3") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/georgecarlin.mp3", duration:"3"]
-    else if (sfx=="4") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/hal2001.mp3", duration:"2"]
-    else if (sfx=="5") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/MAILWORF.mp3", duration:"4"]
-    else if (sfx=="6") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/pacman.mp3", duration:"5"]
-    else if (sfx=="7") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/R2D2-yeah.mp3", duration:"2"]
-    else if (sfx=="8") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/yoda-message-from-the-darkside.mp3", duration:"4"]
-    else if (sfx=="9") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/youve-got-mail-sound.mp3", duration:"2"]
-    else if (sfx=="10") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/Tone1.mp3", duration:"2"]
-    else if (sfx=="11") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/Tone2.mp3", duration:"4"]
-    else if (sfx=="12") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/Tone4.mp3", duration:"2"]
-    else if (sfx=="13") result = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/media/Tone4.mp3", duration:"3"]
+    if (sfx=="1") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/checkyourmailbox.mp3", duration:"6"]
+	else if (sfx=="2") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/dr-evil-youve-got-freakin-mail.mp3", duration:"2"]
+    else if (sfx=="3") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/georgecarlin.mp3", duration:"3"]
+    else if (sfx=="4") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/hal2001.mp3", duration:"2"]
+    else if (sfx=="5") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/MAILWORF.mp3", duration:"4"]
+    else if (sfx=="6") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/pacman.mp3", duration:"5"]
+    else if (sfx=="7") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/R2D2-yeah.mp3", duration:"2"]
+    else if (sfx=="8") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/yoda-message-from-the-darkside.mp3", duration:"4"]
+    else if (sfx=="9") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/youve-got-mail-sound.mp3", duration:"2"]
+    else if (sfx=="10") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/Tone1.mp3", duration:"2"]
+    else if (sfx=="11") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/Tone2.mp3", duration:"4"]
+    else if (sfx=="12") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/Tone4.mp3", duration:"2"]
+    else if (sfx=="13") result = [uri: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/media/Tone4.mp3", duration:"3"]
     else if (sfx=="custom") result = [uri:"${mqAlertCustom}",duration:"10"]
  	return result   
 }
@@ -3785,9 +3785,9 @@ def setupData(){
         </tr></table>"""
     }*/
     result += "<br><hr><br><i><b>URL of this setup page:</b></i><br><br>${getApiServerUrl()}/api/smartapps/installations/${app.id}/setup?access_token=${state.accessToken}<br><br><hr>"
-	result += "<br><i><b>Lastest version of the Lambda code:</b></i><br><br><a href='https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/ask-alexa.src/Node.js'>https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/ask-alexa.src/Node.js</a><br><br><hr>"
-    result += "<br><i><b>Lastest version of the Sample Utterances:</b></i><br><br><a href='https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/ask-alexa.src/Sample%20Utterances'>https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/ask-alexa.src/Sample%20Utterances</a><br><br><hr>"
-    result += "<br><i><b>Lastest version of the Intent Schema:</b></i><br><br><a href='https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/ask-alexa.src/Intent%20Schema'>https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/ask-alexa.src/Intent%20Schema</a><br><br><hr></div>"
+	result += "<br><i><b>Lastest version of the Lambda code:</b></i><br><br><a href='https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/ask-alexa.src/Node.js'>https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/ask-alexa.src/Node.js</a><br><br><hr>"
+    result += "<br><i><b>Lastest version of the Sample Utterances:</b></i><br><br><a href='https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/ask-alexa.src/Sample%20Utterances'>https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/ask-alexa.src/Sample%20Utterances</a><br><br><hr>"
+    result += "<br><i><b>Lastest version of the Intent Schema:</b></i><br><br><a href='https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/ask-alexa.src/Intent%20Schema'>https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/ask-alexa.src/Intent%20Schema</a><br><br><hr></div>"
     def warning = dupCounter ? "<br><font color='red'>* There were errors in your Ask Alexa setup. See the red items below to resolve</font><br>" : ""
     if (!invocationName) warning="<br><font color='red'>* You are missing the invocation name within your Ask Alexa SmartApp. The code above will use 'smart things' as default.</font><br>"
     result = result.replaceAll("--DevCodeWarn--", warning)

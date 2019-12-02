@@ -48,7 +48,7 @@ def mainPage() {
 	dynamicPage(name: "mainPage", title: "Talking Alarm Clock Schedules", install: true, uninstall: false) {
 		section {
             app(name: "childSchedules", appName: "Talking Alarm Clock-Schedule", namespace: "MichaelStruck", title: "Create New Alarm Schedule...", multiple: true, 
-            	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/add.png")
+            	image: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/add.png")
 		}
 		section([title:"Options", mobileOnly:true]) {
             href "pageSummary", title: "View/Configure Alarm Summaries", description: none, image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/img/settings.png"

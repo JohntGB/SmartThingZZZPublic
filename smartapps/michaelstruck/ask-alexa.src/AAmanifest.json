@@ -8,15 +8,15 @@
     "description": "Provide interfacing to control and report on SmartThings devices with the Amazon Echo ('Alexa').",
     "category": "My Apps",
     "videoUrl": "",
-    "photoUrl": "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/AskAlexa512.png",
-    "bannerUrl": "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/AskAlexaMP.png",
+    "photoUrl": "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/AskAlexa512.png",
+    "bannerUrl": "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/AskAlexaMP.png",
     "forumUrl": "https://community.smartthings.com/t/release-ask-alexa-2-3-7/",
     "releaseType": "production",
     "docUrl": "http://thingsthataresmart.wiki/index.php?title=Ask_Alexa",
     "smartApps": {
         "parent": {
             "name": "Ask Alexa",
-            "iconUrl": "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/AskAlexa512.png",
+            "iconUrl": "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/AskAlexa512.png",
             "published": true,
             "oAuth": true,
             "version": "2.3.9f",
@@ -26,7 +26,7 @@
         "children": [
 	{
             "name": "Ask Alexa Message Queue",
-            "iconUrl": "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/ext@2x.png",
+            "iconUrl": "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/ext@2x.png",
             "published": false,
             "oAuth": false,
             "version": "1.0.8",
@@ -36,7 +36,7 @@
         },
 	{
             "name": "Ask Alexa Rooms/Groups",
-            "iconUrl": "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/ext@2x.png",
+            "iconUrl": "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/ext@2x.png",
             "published": false,
             "oAuth": false,
             "version": "1.0.4b",
@@ -46,7 +46,7 @@
         },
 	{
             "name": "Ask Alexa Schedule",
-            "iconUrl": "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/ext@2x.png",
+            "iconUrl": "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/ext@2x.png",
             "published": false,
             "oAuth": false,
             "version": "1.0.4a",
@@ -56,7 +56,7 @@
         },
 	{
             "name": "Ask Alexa Voice Report",
-            "iconUrl": "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/ext@2x.png",
+            "iconUrl": "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/ext@2x.png",
             "published": false,
             "oAuth": false,
             "version": "1.0.9",
@@ -66,7 +66,7 @@
         },
 	{
             "name": "Ask Alexa Weather Report",
-            "iconUrl": "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/ext@2x.png",
+            "iconUrl": "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/ext@2x.png",
             "published": false,
             "oAuth": false,
             "version": "1.0.8",

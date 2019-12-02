@@ -35,9 +35,9 @@ definition(
     author: "Michael Struck",
     description: "Allows for URL cloud interfacing to control SmartThings devices.",
     category: "Convenience",
-    iconUrl: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/cloud-interface.src/CloudInterface.png",
-    iconX2Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/cloud-interface.src/CloudInterface@2x.png",
-    iconX3Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/cloud-interface.src/CloudInterface@2x.png",
+    iconUrl: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/cloud-interface.src/CloudInterface.png",
+    iconX2Url: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/cloud-interface.src/CloudInterface@2x.png",
+    iconX3Url: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/cloud-interface.src/CloudInterface@2x.png",
   	oauth: true)
 preferences {
     page name:"mainPage"
@@ -51,14 +51,14 @@ def mainPage() {
     dynamicPage(name: "mainPage", title:"", install: true, uninstall: false) {
 		section("External control") {
         	input "switches", "capability.switch", title: "Choose Switches", multiple: true, required: false, submitOnChange:true, 
-            	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/add.png"
+            	image: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/add.png"
 			if (switches){
             	if (!state.accessToken) {
 					OAuthToken()
 				}
                 if (state.accessToken != null){
                     href url:"${getApiServerUrl()}/api/smartapps/installations/${app.id}/l?access_token=${state.accessToken}", style:"embedded", required:false, title:"Show URLs", description: none,
-                    	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/url.png"
+                    	image: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/url.png"
                 }
                 else {
                 	paragraph "URLs cannot be created. Access Token not defined. OAuth may not be enabled. Go to the SmartApp IDE settings to enable OAuth."
@@ -67,16 +67,16 @@ def mainPage() {
         }
         section([title:"Options", mobileOnly:true]) {
 			href "pageSettings", title: "Settings", description: none, 
-            	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/settings.png"
+            	image: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/settings.png"
 			href "pageAbout", title: "About ${textAppName()}", description: "Tap to get application version, license, instructions or remove the application",
-            	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/info.png"
+            	image: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/info.png"
         }
 	}
 }
 def pageAbout(){
 	dynamicPage(name: "pageAbout", uninstall: true ) {
         section {
-        	paragraph "${textAppName()} - ${textVersion()}\n${textCopyright()}",image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/cloud-interface.src/CloudInterface@2x.png"
+        	paragraph "${textAppName()} - ${textVersion()}\n${textCopyright()}",image: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/smartapps/michaelstruck/cloud-interface.src/CloudInterface@2x.png"
         }
         section ("Access Token"){
             if (!state.accessToken) {
