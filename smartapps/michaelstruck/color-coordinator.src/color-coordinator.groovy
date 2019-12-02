@@ -21,12 +21,12 @@
  */
 definition(
 	name: "Color Coordinator",
-	namespace: "JohntGB",
+	namespace: "MichaelStruck",
 	author: "Michael Struck",
 	description: "Ties multiple colored lights to one specific light's settings",
 	category: "Convenience",
-	iconUrl: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/ColorCoordinator/CC.png",
-	iconX2Url: "https://raw.githubusercontent.com/JohntGB/SmartThingsZZZ/master/Other-SmartApps/ColorCoordinator/CC@2x.png"//,
+	iconUrl: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/ColorCoordinator/CC.png",
+	iconX2Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/ColorCoordinator/CC@2x.png"//,
 	//pausable: true
 )
 
@@ -39,7 +39,7 @@ def mainPage() {
 		def masterInList = slaves?.id?.find{it==master?.id}
         if (masterInList) {
         	section ("**WARNING**"){
-            	paragraph "You have included the Master Light in the Slave Group. This will cause a loop in execution. Please remove this device from the Slave Group.", image: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/caution.png"
+            	paragraph "You have included the Master Light in the Slave Group. This will cause a loop in execution. Please remove this device from the Slave Group.", image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/caution.png"
             }
         }
         section("Master Light") {

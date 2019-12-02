@@ -20,13 +20,13 @@
 definition(
     name: "Alexa Virtual Device Creator",
     singleInstance: true,
-    namespace: "JohntGB",
+    namespace: "MichaelStruck",
     author: "Michael Struck",
     description: "Allows for creation of SmartThings virtual devices that can be tied to items controlled by Amazon Echo('Alexa').",
     category: "My Apps",
-    iconUrl: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/alexa-helper.src/Alexa.png",
-    iconX2Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/alexa-helper.src/Alexa@2x.png",
-    iconX3Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/alexa-helper.src/Alexa@2x.png")
+    iconUrl: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/alexa-helper.src/Alexa.png",
+    iconX2Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/alexa-helper.src/Alexa@2x.png",
+    iconX3Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/alexa-helper.src/Alexa@2x.png")
 preferences {
     page name:"mainPage"
     page name:"pageAbout"
@@ -69,7 +69,7 @@ def mainPage() {
 def pageAbout(){
 	dynamicPage(name: "pageAbout", uninstall: true) {
 		section {
-        	paragraph "${textAppName()}\n${textCopyright()}", image: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/alexa-helper.src/Alexa@2x.png"
+        	paragraph "${textAppName()}\n${textCopyright()}", image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/alexa-helper.src/Alexa@2x.png"
         }
         section ("SmartApp/Device Versions") { paragraph "${textVersion()}" }    
         section ("Apache License") { paragraph "${textLicense()}" }
@@ -106,7 +106,7 @@ def initialize() {}
 //Common modules (for adding switches)
 def addChildSwitches(){
     def deviceID = "AVDC_${app.id}_${getChildDevices().size()}"
-    def nameSpace = "MichaelStruck"
+    def nameSpace = "JohntGB"
     def result
     try {
 		def childDevice = addChildDevice(nameSpace, addSwitchType, deviceID, null, [name: deviceID, label: addSwitchName, completedSetup: true])
@@ -130,7 +130,7 @@ def deleteChildSwitches() {
 }
 //Common modules
 def getSwitchAbout(){ return "Created by Alexa Virtual Device Creator" }
-def imgURL() { return "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/" }
+def imgURL() { return "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/" }
 //Version/Copyright/Information/Help
 private def textAppName() { return "Alexa Virtual Device Creator" }	
 private def textVersion() {

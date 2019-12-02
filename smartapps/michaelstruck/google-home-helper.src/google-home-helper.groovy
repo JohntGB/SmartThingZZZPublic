@@ -19,14 +19,14 @@
 definition(
     name: "Google Home Helper${parent ? " - Scenario " : ""}",
     singleInstance: true,
-    namespace: "JohntGB",
+    namespace: "MichaelStruck",
     author: "Michael Struck",
     parent: parent ? "MichaelStruck.Google Home Helper" : null,
     description: "Allows for various SmartThings devices to be tied to switches controlled by Google Home.",
     category: "My Apps",
-    iconUrl: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/google-home-helper.src/GoogleHome.png",
-    iconX2Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/google-home-helper.src/GoogleHome@2x.png",
-    iconX3Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/google-home-helper.src/GoogleHome@2x.png")
+    iconUrl: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/google-home-helper.src/GoogleHome.png",
+    iconX2Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/google-home-helper.src/GoogleHome@2x.png",
+    iconX3Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/google-home-helper.src/GoogleHome@2x.png")
 preferences {
     page name:"pageMain"
     //Parent menu pages
@@ -54,7 +54,7 @@ def pageMain() { if (!parent) mainPageParent() else mainPageChild() }
 def mainPageParent() {
 	dynamicPage(name: "mainPageParent", title: "Google Home Helper Scenarios", install: true, uninstall: false) {
 		section {
-			app(name: "childScenarios", appName: "Google Home Helper", namespace: "JohntGB", title: "Create New Google Home Scenario...", multiple: true)
+			app(name: "childScenarios", appName: "Google Home Helper", namespace: "MichaelStruck", title: "Create New Google Home Scenario...", multiple: true)
 		}
 		section("Options") {
 			href "pageSettings", title: "Configure Settings", description: "Tap to configure app settings", image: imgURL() + "settings.png"
@@ -70,7 +70,7 @@ def mainPageParent() {
 def pageAbout(){
 	dynamicPage(name: "pageAbout", uninstall: true) {
 		section {
-        	paragraph "${textAppName()}\n${textCopyright()}", image: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/google-home-helper.src/GoogleHome@2x.png"
+        	paragraph "${textAppName()}\n${textCopyright()}", image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/google-home-helper.src/GoogleHome@2x.png"
         }
         section ("SmartApp/Switch Versions") { paragraph "${textVersion()}" }
         section ("Apache License") { paragraph "${textLicense()}"}
@@ -1145,7 +1145,7 @@ def toggleState(swDevices){
 //Get Sonos Alarm Sound uri
 def getAlarmSound(){
     def soundLength = alarmSonosTimer && alarmSonosTimer < 60 ? alarmSonosTimer : 60
-    def soundUri = [uri: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/alexa-helper-scenario.src/AlarmSirens/AlarmSiren${alarmSonosSound}.mp3", duration: "${soundLength}"]
+    def soundUri = [uri: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/alexa-helper-scenario.src/AlarmSirens/AlarmSiren${alarmSonosSound}.mp3", duration: "${soundLength}"]
     if (alarmSonosSound == "5") soundUri =[uri: "${alarmSonosCustom}", duration: "${soundLength}"]
     state.alarmSound = soundUri
 }
@@ -1166,7 +1166,7 @@ private parseDate(time, type){
     new Date().parse("yyyy-MM-dd'T'HH:mm:ss.SSSZ", formattedDate).format("${type}", timeZone(formattedDate))
 }
 //Common modules
-def imgURL() { return "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/" }
+def imgURL() { return "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/" }
 def getMemCount(){ return memoryCount ? memoryCount : 2 }
 def getSwitchAbout(){ return "Created by Google Home Helper SmartApp" }
 //Version/Copyright/Information/Help

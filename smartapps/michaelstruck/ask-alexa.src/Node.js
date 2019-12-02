@@ -358,7 +358,7 @@ function output( text, context, card, complete, pName, pollyVoice, whisper, spee
             if (disabled) cardText ="Please note: Ask Alexa is disabled within the SmartApp. No action was taken.";  
             SSMLtext = " ";  
     }  
-    var imgURL = "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/AmazonICO/";   
+    var imgURL = "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/AmazonICO/";   
     if (!icon) icon = "AskAlexa";   
     var response = {   
         outputSpeech: {   

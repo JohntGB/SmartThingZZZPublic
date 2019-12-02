@@ -48,13 +48,13 @@
 definition(
     name: "Alexa Helper",
     singleInstance: true,
-    namespace: "JohntGB",
+    namespace: "MichaelStruck",
     author: "Michael Struck",
     description: "Allows for various SmartThings devices to be tied to switches controlled by Amazon Echo('Alexa').",
     category: "My Apps",
-    iconUrl: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/alexa-helper.src/Alexa.png",
-    iconX2Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/alexa-helper.src/Alexa@2x.png",
-    iconX3Url: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/alexa-helper.src/Alexa@2x.png")
+    iconUrl: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/alexa-helper.src/Alexa.png",
+    iconX2Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/alexa-helper.src/Alexa@2x.png",
+    iconX3Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/alexa-helper.src/Alexa@2x.png")
 preferences {
     page name:"mainPage"
     page name:"pageAbout"
@@ -74,25 +74,25 @@ def mainPage() {
                     	"to the latest version to ensure you have the latest features and bug fixes."
             	}
             }
-			app(name: "childScenarios", appName: "Alexa Helper-Scenario", namespace: "JohntGB", title: "Create New Alexa Scenario...", multiple: true)
+			app(name: "childScenarios", appName: "Alexa Helper-Scenario", namespace: "MichaelStruck", title: "Create New Alexa Scenario...", multiple: true)
 		}
 		section("Options") {
 			href "pageSettings", title: "Configure Settings", description: none, 
-            	image: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/settings.png"
+            	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/settings.png"
             if (showAddSwitches) {
             	def titleTxt = getChildDevices().size() > 0 ? "Add/View Virtual Switches" : "Add Virtual Switches"
                 def descTxt = getChildDevices().size() > 1 ? "${getChildDevices().size()} virtual switches created" : getChildDevices().size() == 1 ? "One virtual switch created" : ""
-                href "pageSwitches", title: "${titleTxt}", description: "${descTxt}", image: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/add.png"
+                href "pageSwitches", title: "${titleTxt}", description: "${descTxt}", image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/add.png"
 			}
             href "pageAbout", title: "About ${textAppName()}", description: "Tap to get application version, license, instructions or to remove the application",
-            	image: "https://raw.githubusercontent.com/JohntGB/SmartThingZZZPublic/master/img/info.png"
+            	image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/info.png"
 		}
 	}
 }
 def pageAbout(){
 	dynamicPage(name: "pageAbout", uninstall: true) {
 		section {
-        	paragraph "${textAppName()}\n${textCopyright()}", image: "https://github.com/JohntGB/SmartThingZZZPublic/tree/master/smartapps/michaelstruck/alexa-helper.src/Alexa@2x.png"
+        	paragraph "${textAppName()}\n${textCopyright()}", image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/smartapps/michaelstruck/alexa-helper.src/Alexa@2x.png"
         }
         section ("SmartApp/Switch Versions") {
     		paragraph "${textVersion()}"
@@ -174,7 +174,7 @@ def initialize() {
 //Common modules (for adding switches)
 def addChildSwitches(){
     def deviceID = "AH_${app.id}_${getChildDevices().size()}"
-    def nameSpace = "MichaelStruck"
+    def nameSpace = "JohntGB"
     def result
     try {
 		def childDevice = addChildDevice(nameSpace, addSwitchType, deviceID, null, [name: deviceID, label: addSwitchName, completedSetup: true])

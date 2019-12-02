@@ -26,7 +26,7 @@
  *
  */
 metadata {
-	definition (name: "GE Motion Dimmer Switch 26933", namespace: "JohntGB", author: "Michael Struck", mnmn:"SmartThings", vid: "generic-dimmer") {
+	definition (name: "GE Motion Dimmer Switch 26933", namespace: "MichaelStruck", author: "Michael Struck", mnmn:"SmartThings", vid: "generic-dimmer") {
 		capability "Motion Sensor"
         capability "Actuator"
  		capability "Switch"
